@@ -22,7 +22,7 @@ public class Player_auto_run_oya : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Obstacles")
+        if (collision.gameObject.tag == "Obstacle")
         {
             ChangeSpeed(0.5f);
         }

@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Obstacle
   - Ground
-  - Obstacles
   - Item
   layers:
   - Default
