@@ -13,23 +13,26 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     private Rigidbody2D rigidBody2D_Enemy;
 
+    private bool jumpFlag = false;
+
     [SerializeField, Header("ジャンプ力")]
     private float enemyJumpPower;
 
     private void Start()
     {
         rigidBody2D_Enemy = GetComponent<Rigidbody2D>();
+
     }
 
     protected virtual void Update()
     {
 
-
+        Debug.Log($"rigidBody2D_Enemy.gravityScale ; {rigidBody2D_Enemy.gravityScale}");
         EnemyAction();
 
+      
 
-
-
+      
 
     }
 
@@ -41,13 +44,28 @@ public class EnemyController_Yamashina : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    
+
+
+private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("Floor") && !collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Obstacle") )
         {
-            //Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
+            Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
+            Jump();
 
         }
+        if (collision.gameObject.CompareTag("Ground"))  // 地面に着地した場合
+        {
+            Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
+
+            // Y軸の位置制約を再度適用（着地後に位置を固定）
+            rigidBody2D_Enemy.constraints |= RigidbodyConstraints2D.FreezePositionY;
+
+            // ジャンプフラグをリセットして次回ジャンプ可能にする
+            jumpFlag = false;
+        }
+
     }
 
 
@@ -55,20 +73,21 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     private void Jump()
     {
-        Vector2 upVector = Vector2.up;
 
-        rigidBody2D_Enemy.velocity = upVector;
-        rigidBody2D_Enemy.AddForce(transform.up * enemyJumpPower, ForceMode2D.Force);
+        if (!jumpFlag)
+        {
+            rigidBody2D_Enemy.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
 
+            rigidBody2D_Enemy.AddForce(Vector2.up * enemyJumpPower, ForceMode2D.Impulse);
+            jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
+        }
+      
     }
-
-
-
+   
 
     private void EnemyAction()
     {
 
-        Jump();
 
         Vector3 vPosition = transform.position;
 
