@@ -5,16 +5,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SceneTransitionManager : MonoBehaviour
+public class SceneTransitionManager_Yamashina : MonoBehaviour
 {
-    [SerializeField] public SceneInformation sceneInformation;
+    [SerializeField] public SceneInformation_Yamashina sceneInformation;
     [SerializeField] private GameObject fadePrefab; // フェード用プレハブ
     private Image fadeInstance; // 実際に使用するフェード用 Image
-    [SerializeField] private SceneInformation.SCENE currentScene;  // 今のシーン                  // 今のシーン
+    [SerializeField] private SceneInformation_Yamashina.SCENE currentScene;  // 今のシーン                  // 今のシーン
     private bool isReloading = false; // リロード中かどうかを判定するフラグ
     [Header("フェード速度、 0.1 ～ 5.0の間で入力")]
     [SerializeField] private float fadeSpeed = 2.0f; // フェード速度
-    public static SceneTransitionManager instance;
+    public static SceneTransitionManager_Yamashina instance;
 
 
 
@@ -28,7 +28,7 @@ public class SceneTransitionManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject); // Managerオブジェクト全体を保持
                                            // 現在のシーンを取得して初期化
-            SceneInformation.SCENE initialScene = (SceneInformation.SCENE)SceneManager.GetActiveScene().buildIndex;
+            SceneInformation_Yamashina.SCENE initialScene = (SceneInformation_Yamashina.SCENE)SceneManager.GetActiveScene().buildIndex;
             sceneInformation.SetCurrentScene(initialScene);
 
             SceneManager.sceneLoaded += OnSceneLoaded; // イベント登録
@@ -60,7 +60,7 @@ public class SceneTransitionManager : MonoBehaviour
         Debug.Log($"Scene Loaded: {scene.name}");
 
         // シーン名から `SCENE` Enum を取得して `currentScene` に設定
-        if (Enum.TryParse(scene.name, out SceneInformation.SCENE loadedScene))
+        if (Enum.TryParse(scene.name, out SceneInformation_Yamashina.SCENE loadedScene))
         {
             sceneInformation.SetCurrentScene(loadedScene);
         }
@@ -112,7 +112,7 @@ public class SceneTransitionManager : MonoBehaviour
             }
         }
     }
-    public void SetCurrentScene(int sceneIndex) { currentScene = (SceneInformation.SCENE)sceneIndex; }
+    public void SetCurrentScene(int sceneIndex) { currentScene = (SceneInformation_Yamashina.SCENE)sceneIndex; }
 
     private void PlayBGMForScene()
     {
@@ -121,43 +121,43 @@ public class SceneTransitionManager : MonoBehaviour
 
         switch (sceneName)
         {
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.Title):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Title):
                 bgmName = "BGM_title"; // タイトル画面のBGM名
                 break;
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.Tutorial):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Tutorial):
 
                 bgmName = "BGM_stage_01";
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageOne):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageOne):
                 bgmName = "BGM_stage_01"; // ステージ1のBGM名
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageOne_BOSS):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageOne_BOSS):
                 bgmName = "BGM_stage_01"; // ステージ1のBGM名
                 break;
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageTwo):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageTwo):
                 bgmName = "BGM_stage_02"; // ステージ2のBGM名
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageTwo_BOSS):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageTwo_BOSS):
                 bgmName = "BGM_stage_02"; // ステージ2のBGM名
                 break;
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageThree):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageThree):
                 bgmName = "BGM_stage_03"; // ステージ3のBGM名
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageThree_BOSS):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageThree_BOSS):
                 bgmName = "BGM_stage_03"; // ステージ3のBGM名
                 break;
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageThreeDotFive)://親友予定
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageThreeDotFive)://親友予定
                 bgmName = "BGM_stage_03_5"; // ステージ3.5のBGM名
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.StageFour):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageFour):
                 bgmName = "BGM_stage_04"; // ステージ4のBGM名 ラスボス
                 break;
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation.SCENE.End):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.End):
                 bgmName = "BGM_credit";
                 break;
             default:
@@ -168,7 +168,7 @@ public class SceneTransitionManager : MonoBehaviour
         if (!string.IsNullOrEmpty(bgmName))
         {
 
-            if (sceneName == sceneInformation.GetSceneName(SceneInformation.SCENE.End))
+            if (sceneName == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.End))
             {
 
             }
@@ -184,7 +184,7 @@ public class SceneTransitionManager : MonoBehaviour
     ///// </summary>
     ///// <param name="scene"></param>
 
-    public void SceneChange(SceneInformation.SCENE scene)
+    public void SceneChange(SceneInformation_Yamashina.SCENE scene)
     {
         if (isReloading) return; // シーン変更中なら処理をスキップ
         isReloading = true; // シーン変更中に設定
@@ -209,7 +209,7 @@ public class SceneTransitionManager : MonoBehaviour
 
     public void GoToNextScene(int index)
     {
-        SceneChange((SceneInformation.SCENE)index);
+        SceneChange((SceneInformation_Yamashina.SCENE)index);
     }
 
 
@@ -237,7 +237,7 @@ public class SceneTransitionManager : MonoBehaviour
         // 完全に透明になったら非アクティブ化
         fadeInstance.gameObject.SetActive(false);
         isReloading = false; // リロードが完了したのでフラグをリセット
-        sceneInformation.UpdateScene((SceneInformation.SCENE)SceneManager.GetActiveScene().buildIndex);
+        sceneInformation.UpdateScene((SceneInformation_Yamashina.SCENE)SceneManager.GetActiveScene().buildIndex);
 
     }
 
@@ -269,7 +269,7 @@ public class SceneTransitionManager : MonoBehaviour
         if (sceneInformation.GetNextSceneInt() >= sceneInformation.sceneCount.Length)
         {
             // 最後のシーンの後はタイトルへ
-            stageName = sceneInformation.GetSceneName(SceneInformation.SCENE.Title);
+            stageName = sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Title);
         }
         // シーンの非同期読み込み
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(stageName);

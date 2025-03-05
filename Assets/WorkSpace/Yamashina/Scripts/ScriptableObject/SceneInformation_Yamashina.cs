@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "SceneInformation", menuName = "ScriptableObjects/StageInformation")]
 
-public class SceneInformation : ScriptableObject
+public class SceneInformation_Yamashina : ScriptableObject
 {
     // 全てのシーン
     [System.Serializable]
