@@ -1,16 +1,16 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class EnemyController_Yamashina : MonoBehaviour
 {
-    [Tooltip("ƒ^ƒCƒ‹ƒ}ƒbƒv‚ÌQÆ")]
-    [SerializeField] private Tilemap tilemap;  // ƒ^ƒCƒ‹ƒ}ƒbƒv‚ÌQÆ
-    [SerializeField] private TileBase holeTile; // ŒŠ‚Ìƒ^ƒCƒ‹
+    [Tooltip("ã‚¿ã‚¤ãƒ«ãƒãƒƒãƒ—ã®å‚ç…§")]
+    [SerializeField] private Tilemap tilemap;  // ã‚¿ã‚¤ãƒ«ãƒãƒƒãƒ—ã®å‚ç…§
+    [SerializeField] private TileBase holeTile; // ç©´ã®ã‚¿ã‚¤ãƒ«
 
     private Rigidbody2D rigidBody2D_Enemy;
     private bool jumpFlag = false;
 
-    [SerializeField, Header("ƒWƒƒƒ“ƒv—Í")]
+    [SerializeField, Header("ã‚¸ãƒ£ãƒ³ãƒ—åŠ›")]
     private float enemyJumpPower;
     [SerializeField] private float normalSpeed = 2f;
 
@@ -21,24 +21,24 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     protected virtual void Update()
     {
-        // ƒGƒlƒ~[ƒAƒNƒVƒ‡ƒ“‚ÌŒÄ‚Ño‚µ
+        // ã‚¨ãƒãƒŸãƒ¼ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã®å‘¼ã³å‡ºã—
         EnemyAction();
     }
 
     private void EnemyAction()
     {
-        // ˆÚ“®ˆ—
+        // ç§»å‹•å‡¦ç†
         Vector3 vPosition = transform.position;
         vPosition.x += Time.deltaTime * normalSpeed;
         transform.position = vPosition;
 
-        // ƒGƒlƒ~[‚ÌˆÊ’u‚ğƒ^ƒCƒ‹ƒ}ƒbƒv‚ÌÀ•W‚É•ÏŠ·
+        // ã‚¨ãƒãƒŸãƒ¼ã®ä½ç½®ã‚’ã‚¿ã‚¤ãƒ«ãƒãƒƒãƒ—ã®åº§æ¨™ã«å¤‰æ›
         Vector3Int tilePosition = tilemap.WorldToCell(transform.position);
 
-        // Œ»İˆÊ’u‚Ìƒ^ƒCƒ‹‚ğæ“¾
+        // ç¾åœ¨ä½ç½®ã®ã‚¿ã‚¤ãƒ«ã‚’å–å¾—
         TileBase currentTile = tilemap.GetTile(tilePosition);
 
-        // Œ»İˆÊ’u‚ªŒŠ‚Ìƒ^ƒCƒ‹‚©‚Ç‚¤‚©”»’è
+        // ç¾åœ¨ä½ç½®ãŒç©´ã®ã‚¿ã‚¤ãƒ«ã‹ã©ã†ã‹åˆ¤å®š
         if (currentTile == holeTile && !jumpFlag)
         {
             Jump();
@@ -51,16 +51,25 @@ public class EnemyController_Yamashina : MonoBehaviour
         {
             rigidBody2D_Enemy.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             rigidBody2D_Enemy.AddForce(Vector2.up * enemyJumpPower, ForceMode2D.Impulse);
-            jumpFlag = true;  // ƒWƒƒƒ“ƒvŒã‚Íƒtƒ‰ƒO‚ğ—§‚Ä‚ÄƒWƒƒƒ“ƒv‚ğ1‰ñ‚¾‚¯‚É‚·‚é
+            jumpFlag = true;  // ã‚¸ãƒ£ãƒ³ãƒ—å¾Œã¯ãƒ•ãƒ©ã‚°ã‚’ç«‹ã¦ã¦ã‚¸ãƒ£ãƒ³ãƒ—ã‚’1å›ã ã‘ã«ã™ã‚‹
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))  // ’n–Ê‚É’…’n‚µ‚½ê‡
+        if (collision.gameObject.CompareTag("Ground"))  // åœ°é¢ã«ç€åœ°ã—ãŸå ´åˆ
         {
             rigidBody2D_Enemy.constraints |= RigidbodyConstraints2D.FreezePositionY;
             jumpFlag = false;
+        }
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            // ï¿½ï¿½ï¿½İˆÊ’uï¿½ï¿½ï¿½ï¿½ï¿½Ìƒ^ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            if (!jumpFlag)
+            {
+                Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
+                Jump(); 
+            }
         }
     }
 }
