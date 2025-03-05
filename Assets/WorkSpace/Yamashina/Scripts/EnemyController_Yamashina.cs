@@ -14,9 +14,11 @@ public class EnemyController_Yamashina : MonoBehaviour
     private float enemyJumpPower;
     [SerializeField] private float normalSpeed = 2f;
 
+ private Animator animator;
     private void Start()
     {
         rigidBody2D_Enemy = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();    
     }
 
     protected virtual void Update()
@@ -31,6 +33,7 @@ public class EnemyController_Yamashina : MonoBehaviour
         Vector3 vPosition = transform.position;
         vPosition.x += Time.deltaTime * normalSpeed;
         transform.position = vPosition;
+
 
         // エネミーの位置をタイルマップの座標に変換
         Vector3Int tilePosition = tilemap.WorldToCell(transform.position);
@@ -52,20 +55,26 @@ public class EnemyController_Yamashina : MonoBehaviour
             rigidBody2D_Enemy.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             rigidBody2D_Enemy.AddForce(Vector2.up * enemyJumpPower, ForceMode2D.Impulse);
             jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
+            animator.SetBool("jumpFlag",true);
+
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))  // 地面に着地した場合
-        {
+        {            jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
+
             rigidBody2D_Enemy.constraints |= RigidbodyConstraints2D.FreezePositionY;
-            jumpFlag = false;
+            animator.SetBool("jumpFlag", false);
+            jumpFlag = false;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
+
         }
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             // ���݈ʒu�����̃^�C�����ǂ�������
             if (!jumpFlag)
+
             {
                 Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
                 Jump(); 
