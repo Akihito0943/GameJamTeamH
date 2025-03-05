@@ -44,12 +44,11 @@ public class EnemyController_Yamashina : MonoBehaviour
     }
 
 
-    
 
 
-private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle") )
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
             Jump();
@@ -65,8 +64,9 @@ private void OnCollisionEnter2D(Collision2D collision)
             // ジャンプフラグをリセットして次回ジャンプ可能にする
             jumpFlag = false;
         }
-
     }
+
+ 
 
 
 
