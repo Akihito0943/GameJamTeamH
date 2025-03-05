@@ -57,6 +57,8 @@ private void OnCollisionEnter2D(Collision2D collision)
         }
         if (collision.gameObject.CompareTag("Ground"))  // 地面に着地した場合
         {
+            Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
+
             // Y軸の位置制約を再度適用（着地後に位置を固定）
             rigidBody2D_Enemy.constraints |= RigidbodyConstraints2D.FreezePositionY;
 
