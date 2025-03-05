@@ -67,7 +67,8 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     private void EnemyAction()
     {
-        //Jump();
+
+        Jump();
 
         Vector3 vPosition = transform.position;
 
