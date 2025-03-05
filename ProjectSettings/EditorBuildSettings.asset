@@ -6,6 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/WorkSpace/Yamashina/TitleScene.unity
+    guid: 235429403af0cf04490154afc00def9f
+  - enabled: 1
+    path: Assets/WorkSpace/Yamashina/MainScene.unity
+    guid: 0fd2f9b694a740c4c8acbff6388f451a
+  - enabled: 1
+    path: Assets/WorkSpace/Yamashina/ResultScene.unity
+    guid: 46323fbd767a31d45b814718c3f62795
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
