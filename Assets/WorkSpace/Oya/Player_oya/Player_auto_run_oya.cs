@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player_auto_run_oya : MonoBehaviour
 {
     [SerializeField] float speed = 1.0f;
-    [SerializeField] float accelMultiplier = 2f; // ‰Á‘¬‚Ì”{—¦
-    [SerializeField] float accelDuration = 2f; // ‰Á‘¬‚·‚éŠÔi•bj
+    [SerializeField] float accelMultiplier = 2f; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì”{ï¿½ï¿½
+    [SerializeField] float accelDuration = 2f; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½éï¿½Ôiï¿½bï¿½j
     private float originalSpeed;
     private bool isAccelerating = false;
     // Start is called before the first frame update
@@ -36,18 +36,18 @@ public class Player_auto_run_oya : MonoBehaviour
     {
         StartCoroutine(Accelerate(accelMultiplier));
 
-        if (!isAccelerating) // ‚·‚Å‚É‰Á‘¬’†‚Å‚È‚¯‚ê‚ÎŠJn
+        if (!isAccelerating) // ï¿½ï¿½ï¿½Å‚É‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚È‚ï¿½ï¿½ï¿½ÎŠJï¿½n
         {
         }
     }
     private IEnumerator Accelerate(float accelMultiplier)
     {
         isAccelerating = true;
-        speed *= accelMultiplier; // ‰Á‘¬
+        speed *= accelMultiplier; // ï¿½ï¿½ï¿½ï¿½
 
-        yield return new WaitForSeconds(accelDuration); // w’èŠÔ‘Ò‚Â
+        yield return new WaitForSeconds(accelDuration); // ï¿½wï¿½èï¿½Ô‘Ò‚ï¿½
 
-        speed = originalSpeed; // Œ³‚Ì‘¬“x‚É–ß‚·
+        speed = originalSpeed; // ï¿½ï¿½ï¿½Ì‘ï¿½ï¿½xï¿½É–ß‚ï¿½
         isAccelerating = false;
     }
 }
