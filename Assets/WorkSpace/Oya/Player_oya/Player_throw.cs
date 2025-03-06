@@ -11,6 +11,8 @@ public class Player_throw : MonoBehaviour
     [SerializeField] float coolTime = 100;
     [SerializeField] float maxCoolTime = 100;
     private bool isCoolTime = false;
+    [SerializeField] static float allCount = 0;
+
 
     // Update is called once per frame
     void Update()
@@ -21,7 +23,7 @@ public class Player_throw : MonoBehaviour
         }
         Throw();
     }
-    
+
     private void Throw()
     {
         if (coolTime >= maxCoolTime)
@@ -32,6 +34,9 @@ public class Player_throw : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                //ìäÇ∞ÇΩâÒêî
+                allCount++;
+                Debug.Log(allCount);
                 //Transform transform = gameObject.transform;
                 Instantiate(bullet, transform);
                 animator.SetBool("isThrow", true);
