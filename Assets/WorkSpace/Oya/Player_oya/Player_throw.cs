@@ -19,7 +19,6 @@ public class Player_throw : MonoBehaviour
         {
             coolTime += 0.5f;
         }
-        Debug.Log(coolTime.ToString());
         Throw();
     }
     
