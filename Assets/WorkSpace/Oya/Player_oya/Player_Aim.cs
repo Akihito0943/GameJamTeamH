@@ -4,71 +4,78 @@ using UnityEngine;
 
 public class Player_Aim : MonoBehaviour
 {
-    private Camera mainCamera;
-    private Vector3 mousePos;
-    [SerializeField] public GameObject bullet;
-    [SerializeField] public Transform bulletTransform;
-    
-    [SerializeField] Animator animator;
-    [SerializeField] static float allCount = 0;
+    [SerializeField, Header("バレットのプレハブ")]
+    GameObject bullet;
 
+    [SerializeField, Header("バレットのトランスフォーム")]
+    Transform bulletTransform;
 
+    [SerializeField, Header("プレイヤーのアニメーター")]
+    Animator animator;
 
-    [SerializeField] float coolTime = 100;
-    [SerializeField] float maxCoolTime = 100;
+    [SerializeField, Header("輪っかを投げた回数")]
+    static float allCount = 0;
+
+    [SerializeField, Header("クールタイム")]
+    float coolTime = 2;
+
+    [SerializeField, Header("クールタイム中かどうか")]
     private bool isCoolTime = false;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-    }
 
     // Update is called once per frame
     void Update()
     {
-        mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        // マウスの座標を取得
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0;
+
+        // マウスの方向を計算し160度の範囲に移動を制限する
         Vector3 rotation = mousePos - transform.position;
-
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-
         rotZ = Mathf.Clamp(rotZ, -80, 80);
-
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-        if (coolTime < maxCoolTime)
+        // 左クリックで弾を投げる
+        if (Input.GetMouseButtonDown(0))
         {
-            coolTime += 0.5f;
+            // クールタイム中でなければ弾を発射する
+            if (!isCoolTime)
+            {
+                isCoolTime = true;
+                StartCoroutine(ThrowAfterCoolTimer());
+            }
         }
-        Throw();
     }
+
+
+    /// <summary>
+    /// 弾を投げる
+    /// </summary>
     private void Throw()
     {
-        if (coolTime >= maxCoolTime)
-        {
-            isCoolTime = true;
-        }
-        if (isCoolTime)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                //投げた回数
-                allCount++;
-                Debug.Log(allCount);
+        //投げた回数をカウント
+        allCount++;
+        Debug.Log(allCount);
 
-                //Transform transform = gameObject.transform;
-                Instantiate(bullet, bulletTransform.position, Quaternion.identity);
-                animator.SetBool("isThrow", true);
-                isCoolTime = false;
-                coolTime = 0;
+        // 弾を生成する
+        Instantiate(bullet, bulletTransform.position, Quaternion.identity);
 
-            }
-            else
-            {
-                animator.SetBool("isThrow", false);
-            }
-        }
+        // 投げるアニメーションを再生する
+        animator.SetTrigger("Throw");
+    }
+
+
+    /// <summary>
+    /// クールタイム後に弾を投げる
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator ThrowAfterCoolTimer()
+    {
+        Throw();
+
+        yield return new WaitForSeconds(coolTime);
+
+        isCoolTime = false;
     }
 }

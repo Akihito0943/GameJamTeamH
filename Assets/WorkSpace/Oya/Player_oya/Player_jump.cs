@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Player_jump : MonoBehaviour
 {
-    Rigidbody2D  rigidbody2D;
+    Rigidbody2D rigidbody2D;
     private bool isGround = true;
     [Header("ジャンプ力")]
-    [SerializeField]float jumpPower = 5.0f;
+    [SerializeField] float jumpPower = 5.0f;
 
     [SerializeField] Animator animator;
 
@@ -24,13 +24,10 @@ public class Player_jump : MonoBehaviour
     }
     private void JumpUpdate()
     {
-        if (isGround&&Input.GetKeyDown(KeyCode.Space))
+        if (isGround && Input.GetKeyDown(KeyCode.Space))
         {
-            {// ジャンプ開始
-             // ジャンプ力を計算
-                // ジャンプ力を適用
-                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpPower);
-            }
+            // ジャンプ力を適用
+            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpPower);
         }
     }
 
@@ -39,7 +36,7 @@ public class Player_jump : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGround = true;
-            animator.SetBool("isInair",true);
+            animator.SetBool("isInair", true);
         }
 
     }

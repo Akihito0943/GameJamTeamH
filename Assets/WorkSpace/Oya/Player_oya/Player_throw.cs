@@ -42,15 +42,11 @@ public class Player_throw : MonoBehaviour
                 animator.SetBool("isThrow", true);
                 isCoolTime = false;
                 coolTime = 0;
-
             }
             else
             {
                 animator.SetBool("isThrow", false);
             }
-
-
         }
     }
-
 }
