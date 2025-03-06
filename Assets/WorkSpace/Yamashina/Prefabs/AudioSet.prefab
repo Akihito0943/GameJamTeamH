@@ -156,7 +156,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.969697, y: 0.969697, z: 0.969697}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6112211852180809101}
@@ -175,12 +175,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5b56405cc8c2344907a667fbf0c0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClipsBGM: []
-  audioClipsSE: []
+  audioClipsBGM:
+  - {fileID: 8300000, guid: db178d7b16071ca46a719144d1c50914, type: 3}
+  - {fileID: 8300000, guid: 8fd2efa5b27e04745bfec21c8f1cd7fc, type: 3}
+  - {fileID: 8300000, guid: b20adfe0c56946c4e97d0112a234d9f8, type: 3}
+  audioClipsSE:
+  - {fileID: 8300000, guid: 32740bfb3a014494f9f1eb93864386ca, type: 3}
+  - {fileID: 8300000, guid: c98e01de11fb5614fa54686061b04e23, type: 3}
+  - {fileID: 8300000, guid: 4e8677a88ddbc6e45ace007f4da64438, type: 3}
+  - {fileID: 8300000, guid: b9e1ef555687f7a4b97a1479f489d2b7, type: 3}
+  - {fileID: 8300000, guid: a38aa11bdbee5d048bb1b3184db5c2a3, type: 3}
+  - {fileID: 8300000, guid: 66cc048f270c6ca4ea1e7b7f01bf5ae9, type: 3}
+  - {fileID: 8300000, guid: efee8b85821d0f246bf561abf61ca009, type: 3}
+  - {fileID: 8300000, guid: f93ddc90c6ad34144bc42fceaea0ca0d, type: 3}
+  - {fileID: 8300000, guid: 70022ad3a7e9c624fbab08812cda2143, type: 3}
   bgmSource: {fileID: 6852113580496414506}
   seSource: {fileID: 4651609467027161685}
-  bgmMixerGroup: {fileID: 0}
-  seMixerGroup: {fileID: 0}
+  bgmMixerGroup: {fileID: -4108538381236679251, guid: f69f91091161b664ab1abc8e8815769c, type: 2}
+  seMixerGroup: {fileID: -2155192936819050110, guid: f69f91091161b664ab1abc8e8815769c, type: 2}
 --- !u!1 &1553061318831934779
 GameObject:
   m_ObjectHideFlags: 0
