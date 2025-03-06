@@ -25,6 +25,8 @@ public class GameManager_Yamashina : MonoBehaviour
 
 
         enemyState = newState;
+        Debug.Log(newState);
+
     }
     public static EnemyState GetState()
     {

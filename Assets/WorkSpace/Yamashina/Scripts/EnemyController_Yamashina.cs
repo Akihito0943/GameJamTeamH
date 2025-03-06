@@ -22,9 +22,7 @@ public class EnemyController_Yamashina : MonoBehaviour
     private float normalSpeed = 2f;
     private bool IsAttacked = false;
 
-    // 攻撃時の停止時間（秒）
-    [SerializeField, Header("攻撃を受けた時のの停止時間")]
-    private float pauseDuration = 0.5f;
+  
     // 一時停止中のフラグ
     private bool isPaused = false;
     private void Start()
@@ -139,7 +137,8 @@ public class EnemyController_Yamashina : MonoBehaviour
                 IsAttacked = true;
                 GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.Defeated);
 
-                StartCoroutine(StopMovementAndResetAttack());
+                isPaused = true;
+                SceneTransitionManager_Yamashina.instance.GoToNextScene(SceneTransitionManager_Yamashina.instance.sceneInformation.GetNextSceneInt());
 
 
             }
@@ -147,14 +146,6 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     }
     // 攻撃時に一時停止してから再開するためのコルーチン
-    private IEnumerator StopMovementAndResetAttack()
-    {
-        isPaused = true;
-        // 指定時間停止
-        yield return new WaitForSeconds(pauseDuration);
-        isPaused = false;
-        animator.SetBool("IsAttacked", false);
-        IsAttacked = false;
-    }
+    
 }
 
