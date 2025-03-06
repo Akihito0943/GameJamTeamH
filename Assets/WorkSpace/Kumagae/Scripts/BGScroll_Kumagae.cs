@@ -18,7 +18,7 @@ public class BGScroll_Kumagae : MonoBehaviour
         // カメラの初期座標を取得
         lastCameraPos = Camera.main.transform.position;
 
-        Debug.Log("画像の初期座標" + image.transform.position.x);
+        Debug.Log("画像の初期座標" + image.transform.position);
         Debug.Log("カメラの初期座標" + lastCameraPos);
     }
 
@@ -26,8 +26,7 @@ public class BGScroll_Kumagae : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("画像の初期座標" + image.transform.position.x);
-       // Debug.Log("カメラの初期座標" + lastCameraPos);
+        Debug.Log("画像の初期座標" + image.transform.position);
 
         Vector2 cameraMoveSpeed = Camera.main.transform.position - lastCameraPos;
 
