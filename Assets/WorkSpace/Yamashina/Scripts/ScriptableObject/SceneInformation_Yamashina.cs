@@ -12,8 +12,8 @@ public class SceneInformation_Yamashina : ScriptableObject
     public enum SCENE
     {
         Title,      // タイトル
-        Tutorial,
-        StageOne,   // ステージ１
+        Main,
+        Result,   // ステージ１
       
       
         End,
@@ -103,10 +103,10 @@ public class SceneInformation_Yamashina : ScriptableObject
         switch (newScene)
         {
             case SCENE.Title:
-                nextScene = SCENE.Tutorial;
+                nextScene = SCENE.Main;
                 break;
-                case SCENE.Tutorial:
-                nextScene = SCENE.StageOne; 
+                case SCENE.Main:
+                nextScene = SCENE.Result; 
                 break;     
 
             

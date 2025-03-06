@@ -16,7 +16,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
     [SerializeField] private float fadeSpeed = 2.0f; // フェード速度
     public static SceneTransitionManager_Yamashina instance;
 
-
+    
 
 
 
@@ -122,11 +122,11 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
                 bgmName = "BGM_title"; // タイトル画面のBGM名
                 break;
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Tutorial):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Main):
 
                 bgmName = "BGM_stage_01";
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageOne):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Result):
                 bgmName = "BGM_stage_01"; // ステージ1のBGM名
                 break;
        
@@ -241,7 +241,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
         }
         
         // **シーン遷移処理**
-        if (sceneInformation.GetNextSceneInt() >= sceneInformation.sceneCount.Length)
+        if (sceneInformation.GetNextSceneInt() >sceneInformation.sceneCount.Length)
         {
             // 最後のシーンの後はタイトルへ
             stageName = sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Title);
