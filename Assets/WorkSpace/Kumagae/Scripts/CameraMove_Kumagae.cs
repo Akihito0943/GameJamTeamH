@@ -41,4 +41,13 @@ public class CameraMove_Kumagae : MonoBehaviour
         // カメラの座標を更新
         transform.position = new Vector3(newCameraPosX, transform.position.y, transform.position.z);
     }
+
+    /// <summary>
+    /// オフセット値を取得
+    /// </summary>
+    /// <returns>オフセット値</returns>
+    public float GetOffset()
+    {
+        return offset;
+    }    
 }
