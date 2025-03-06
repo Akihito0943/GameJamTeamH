@@ -20,7 +20,7 @@ MonoBehaviour:
   - TitleScene
   - MainScene
   - ResultScene
-  previousScene: 1
-  currentScene: 2
-  nextScene: 3
-  sceneCount: 00000000010000000200000003000000
+  previousScene: 0
+  currentScene: 0
+  nextScene: 1
+  sceneCount: 000000000100000002000000

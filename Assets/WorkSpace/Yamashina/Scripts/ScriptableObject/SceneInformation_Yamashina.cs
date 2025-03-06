@@ -12,15 +12,10 @@ public class SceneInformation_Yamashina : ScriptableObject
     public enum SCENE
     {
         Title,      // タイトル
-        Tutorial,
-        StageOne,   // ステージ１
-        StageOne_BOSS,
-        StageTwo,   // ステージ２
-        StageTwo_BOSS,
-        StageThree, // ステージ３
-        StageThree_BOSS,
-        StageThreeDotFive,//親友戦闘
-        StageFour,//ボス
+        Main,
+        Result,   // ステージ１
+      
+      
         End,
 
 
@@ -91,8 +86,7 @@ public class SceneInformation_Yamashina : ScriptableObject
     public int GetNextSceneInt()
     
     {
-        return SceneManager.GetActiveScene().buildIndex + 1;
-     
+        return (int)nextScene;
     } 
 
     public void UpdateScene(SCENE newScene)
@@ -109,36 +103,14 @@ public class SceneInformation_Yamashina : ScriptableObject
         switch (newScene)
         {
             case SCENE.Title:
-                nextScene = SCENE.Tutorial;
+                nextScene = SCENE.Main;
                 break;
-                case SCENE.Tutorial:
-                nextScene = SCENE.StageOne; 
+                case SCENE.Main:
+                nextScene = SCENE.Result; 
                 break;     
 
-            case SCENE.StageOne:
-                nextScene = SCENE.StageOne_BOSS;
-                break;
-            case SCENE.StageOne_BOSS:
-                nextScene = SCENE.StageTwo;
-                break;
-            case SCENE.StageTwo:
-                nextScene = SCENE.StageTwo_BOSS;
-                break;
-            case SCENE.StageTwo_BOSS:
-                nextScene = SCENE.StageThree;
-                break;
-            case SCENE.StageThree:
-                nextScene = SCENE.StageThree_BOSS;
-                break;
-            case SCENE.StageThree_BOSS:
-                nextScene = SCENE.StageThreeDotFive;
-                break;
-            case SCENE.StageThreeDotFive:
-                nextScene = SCENE.StageFour;
-                break;
-            case SCENE.StageFour:
-                nextScene = SCENE.End;
-                break;
+            
+            
             default:
                 nextScene = SCENE.End;
                 break;

@@ -16,7 +16,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
     [SerializeField] private float fadeSpeed = 2.0f; // フェード速度
     public static SceneTransitionManager_Yamashina instance;
 
-
+    
 
 
 
@@ -38,6 +38,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
         {
             Destroy(gameObject); // 二重生成防止
         }
+     
 
     }
 
@@ -46,12 +47,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
     {
 
 
-        //デバッグ用一旦シーン遷移が正しくできるか確認のため
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-
-            GoToNextScene(sceneInformation.GetNextSceneInt());
-        }
+       
 
 
     }
@@ -69,7 +65,8 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
 
 
         isReloading = false; // シーン変更が完了したのでリセット
-
+           //デバッグ用一旦シーン遷移が正しくできるか確認のため
+      
     }
     public void ReloadCurrentScene()
     {
@@ -125,37 +122,15 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
                 bgmName = "BGM_title"; // タイトル画面のBGM名
                 break;
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Tutorial):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Main):
 
                 bgmName = "BGM_stage_01";
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageOne):
+            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Result):
                 bgmName = "BGM_stage_01"; // ステージ1のBGM名
                 break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageOne_BOSS):
-                bgmName = "BGM_stage_01"; // ステージ1のBGM名
-                break;
-
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageTwo):
-                bgmName = "BGM_stage_02"; // ステージ2のBGM名
-                break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageTwo_BOSS):
-                bgmName = "BGM_stage_02"; // ステージ2のBGM名
-                break;
-
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageThree):
-                bgmName = "BGM_stage_03"; // ステージ3のBGM名
-                break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageThree_BOSS):
-                bgmName = "BGM_stage_03"; // ステージ3のBGM名
-                break;
-
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageThreeDotFive)://親友予定
-                bgmName = "BGM_stage_03_5"; // ステージ3.5のBGM名
-                break;
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.StageFour):
-                bgmName = "BGM_stage_04"; // ステージ4のBGM名 ラスボス
-                break;
+       
+           
 
             case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.End):
                 bgmName = "BGM_credit";
@@ -266,7 +241,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
         }
         
         // **シーン遷移処理**
-        if (sceneInformation.GetNextSceneInt() >= sceneInformation.sceneCount.Length)
+        if (sceneInformation.GetNextSceneInt() >sceneInformation.sceneCount.Length)
         {
             // 最後のシーンの後はタイトルへ
             stageName = sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Title);
