@@ -280,11 +280,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1839735485 &32179355 stripped
-Tilemap:
-  m_CorrespondingSourceObject: {fileID: 4881117414616040175, guid: 13486af8551a414469abdeb258876650, type: 3}
-  m_PrefabInstance: {fileID: 1068566350}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &250276869
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,7 +862,7 @@ PrefabInstance:
     - target: {fileID: 1584791368073817225, guid: dcab049f3dac57946941bdaf1c8ee966, type: 3}
       propertyPath: tilemap
       value: 
-      objectReference: {fileID: 32179355}
+      objectReference: {fileID: 0}
     - target: {fileID: 2785225842179130377, guid: dcab049f3dac57946941bdaf1c8ee966, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.01

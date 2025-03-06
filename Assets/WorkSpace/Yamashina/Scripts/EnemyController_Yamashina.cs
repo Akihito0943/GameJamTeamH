@@ -1,26 +1,32 @@
-﻿using UnityEditor;
+﻿using System.Collections;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class EnemyController_Yamashina : MonoBehaviour
 {
     [Tooltip("タイルマップの参照")]
-    [SerializeField] private Tilemap tilemap;  // タイルマップの参照
+    [SerializeField, Header("ヒエラルキー上のHole_Layerをドラッグアンドドロップ")] private Tilemap tilemap;  // タイルマップの参照
     [SerializeField] private TileBase holeTile; // 穴のタイル
-
-    [SerializeField] private float enemyRunningStartTime;
+    private Animator animator;
     private Rigidbody2D rigidBody2D_Enemy;
-    private bool jumpFlag = false;
-    private bool IsAttacked = false;
-
     private bool enemyActionStarted = false; // アクション開始フラグ
+    [SerializeField] private float enemyRunningStartTime;
 
 
     [SerializeField, Header("ジャンプ力")]
     private float enemyJumpPower;
-    [SerializeField] private float normalSpeed = 2f;
+    private bool jumpFlag = false;
 
-    private Animator animator;
+    [SerializeField, Header("走るスピード")]
+    private float normalSpeed = 2f;
+    private bool IsAttacked = false;
+
+    // 攻撃時の停止時間（秒）
+    [SerializeField, Header("攻撃を受けた時のの停止時間")]
+    private float pauseDuration = 0.5f;
+    // 一時停止中のフラグ
+    private bool isPaused = false;
     private void Start()
     {
         rigidBody2D_Enemy = GetComponent<Rigidbody2D>();
@@ -47,7 +53,11 @@ public class EnemyController_Yamashina : MonoBehaviour
     }
     private void EnemyAction()
     {
-
+        // 一時停止中は動かさない
+        if (isPaused)
+        {
+            return;
+        }
 
         // 移動処理
         Vector3 vPosition = transform.position;
@@ -108,7 +118,7 @@ public class EnemyController_Yamashina : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.CompareTag("Item"))
         {
             // ���݈ʒu�����̃^�C�����ǂ�������
             if (!IsAttacked)
@@ -116,8 +126,22 @@ public class EnemyController_Yamashina : MonoBehaviour
             {
                 animator.SetBool("IsAttacked", true);
                 IsAttacked = true;
+                StartCoroutine(StopMovementAndResetAttack());
+
 
             }
         }
+
+    }
+    // 攻撃時に一時停止してから再開するためのコルーチン
+    private IEnumerator StopMovementAndResetAttack()
+    {
+        isPaused = true;
+        // 指定時間停止
+        yield return new WaitForSeconds(pauseDuration);
+        isPaused = false;
+        animator.SetBool("IsAttacked", false);
+        IsAttacked = false;
     }
 }
+
