@@ -6,20 +6,16 @@ public class MultiAudio_Yamashina : MonoBehaviour
 {
     public AudioClip[] audioClipsBGM; // Array for multiple BGM clips
     public AudioClip[] audioClipsSE;  // Array for multiple SE clips
-    public AudioClip[] audioClipsUI;  // Array for multiple UI clips
 
     public AudioSource bgmSource;
     public AudioSource seSource;
-    public AudioSource uiSource; // New UI AudioSource
 
     // Audio Mixer Groups to assign different mixer settings
     public AudioMixerGroup bgmMixerGroup;
     public AudioMixerGroup seMixerGroup;
-    public AudioMixerGroup uiMixerGroup;
 
     private Dictionary<string, AudioClip> sEClipDictionary;
     private Dictionary<string, AudioClip> BGMClipDictionary;
-    private Dictionary<string, AudioClip> UIClipDictionary; // Dictionary for UI clips
 
     // Singleton
     public static MultiAudio_Yamashina ins;
@@ -44,7 +40,6 @@ public class MultiAudio_Yamashina : MonoBehaviour
         InitializeDictionaries();
         bgmSource = GameObject.FindWithTag("BGM").GetComponent<AudioSource>();
         seSource = GameObject.FindWithTag("SE").GetComponent<AudioSource>();
-        uiSource = GameObject.FindWithTag("UI").GetComponent<AudioSource>(); // New UI AudioSource
 
 
     }
@@ -58,7 +53,6 @@ public class MultiAudio_Yamashina : MonoBehaviour
         {
             seSource.outputAudioMixerGroup = seMixerGroup;
         }
-        if (uiSource != null) uiSource.outputAudioMixerGroup = uiMixerGroup; // Assign UI Mixer Group
 
       
     }
@@ -79,12 +73,7 @@ public class MultiAudio_Yamashina : MonoBehaviour
             BGMClipDictionary[clip.name] = clip;
         }
 
-        // UI clips
-        UIClipDictionary = new Dictionary<string, AudioClip>();
-        foreach (var clip in audioClipsUI)
-        {
-            UIClipDictionary[clip.name] = clip;
-        }
+      
     }
 
     public void PlayBGM_ByName(string bgmName)
@@ -119,17 +108,7 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
     }
 
-    public void PlayUIByName(string name)
-    {
-        if (UIClipDictionary.TryGetValue(name, out var clip))
-        {
-            PlayUI(clip);
-        }
-        else
-        {
-            Debug.LogWarning("UI with name not found: " + name);
-        }
-    }
+    
 
     private void PlaySE(AudioClip clip)
     {
@@ -146,19 +125,7 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
     }
 
-    private void PlayUI(AudioClip clip)
-    {
-        if (clip != null)
-        {
-            uiSource.clip = clip;
-            uiSource.PlayOneShot(uiSource.clip);
-            //Debug.Log("Playing UI: " + clip.name);
-        }
-        else
-        {
-            Debug.LogWarning("UI clip is null");
-        }
-    }
+    
 
     private void PlayBGM(AudioClip clip)
     {
@@ -187,16 +154,5 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
     }
 
-    // Optional: Play UI sound by index
-    public void ChooseSongs_UI(int index)
-    {
-        if (index >= 0 && index < audioClipsUI.Length)
-        {
-            PlayUI(audioClipsUI[index]);
-        }
-        else
-        {
-            Debug.LogWarning("UI index out of range");
-        }
-    }
+    
 }
