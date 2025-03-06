@@ -8,37 +8,47 @@ public class EnemyController_Yamashina : MonoBehaviour
     [SerializeField] private Tilemap tilemap;  // タイルマップの参照
     [SerializeField] private TileBase holeTile; // 穴のタイル
 
+    [SerializeField] private float enemyRunningStartTime;
     private Rigidbody2D rigidBody2D_Enemy;
     private bool jumpFlag = false;
     private bool IsAttacked = false;
 
-    enum EnemyState
-    {
-        STOP,
-        ACTION,
-    }
-    private EnemyState enemyState;
+    private bool enemyActionStarted = false; // アクション開始フラグ
+
 
     [SerializeField, Header("ジャンプ力")]
     private float enemyJumpPower;
     [SerializeField] private float normalSpeed = 2f;
 
- private Animator animator;
+    private Animator animator;
     private void Start()
     {
         rigidBody2D_Enemy = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        enemyState = EnemyState.STOP;
+
+        animator.enabled = false;
+        // エネミーアクションの呼び出し
+        Invoke("StartEnemyAction", enemyRunningStartTime);
     }
 
     protected virtual void Update()
     {
-        // エネミーアクションの呼び出し
-        EnemyAction();
+        if (enemyActionStarted)
+        {
+            EnemyAction();
+        }
     }
-
+    // enemyRunningStartTime秒後に呼ばれるメソッド
+    private void StartEnemyAction()
+    {
+        // アニメーションを再開し、敵の動作を開始
+        animator.enabled = true;
+        enemyActionStarted = true;
+    }
     private void EnemyAction()
     {
+
+
         // 移動処理
         Vector3 vPosition = transform.position;
         vPosition.x += Time.deltaTime * normalSpeed;
@@ -71,7 +81,7 @@ public class EnemyController_Yamashina : MonoBehaviour
             rigidBody2D_Enemy.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             rigidBody2D_Enemy.AddForce(Vector2.up * enemyJumpPower, ForceMode2D.Impulse);
             jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
-            animator.SetBool("jumpFlag",true);
+            animator.SetBool("jumpFlag", true);
 
         }
     }
@@ -79,7 +89,8 @@ public class EnemyController_Yamashina : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))  // 地面に着地した場合
-        {            jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
+        {
+            jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
 
             rigidBody2D_Enemy.constraints |= RigidbodyConstraints2D.FreezePositionY;
             animator.SetBool("jumpFlag", false);
@@ -93,7 +104,7 @@ public class EnemyController_Yamashina : MonoBehaviour
 
             {
                 Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
-                Jump(); 
+                Jump();
             }
         }
 
