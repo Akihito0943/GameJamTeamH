@@ -133,8 +133,9 @@ public class EnemyController_Yamashina : MonoBehaviour
             if (!IsAttacked)
 
             {
-                animator.SetBool("IsAttacked", true);
                 IsAttacked = true;
+
+                animator.SetBool("IsAttacked", true);
                 GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.Defeated);
 
                 isPaused = true;
@@ -145,7 +146,5 @@ public class EnemyController_Yamashina : MonoBehaviour
         }
 
     }
-    // 攻撃時に一時停止してから再開するためのコルーチン
-    
 }
 
