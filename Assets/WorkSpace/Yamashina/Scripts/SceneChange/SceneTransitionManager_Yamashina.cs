@@ -16,7 +16,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
     [SerializeField] private float fadeSpeed = 2.0f; // フェード速度
     public static SceneTransitionManager_Yamashina instance;
 
-    
+
 
 
 
@@ -38,7 +38,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
         {
             Destroy(gameObject); // 二重生成防止
         }
-     
+
 
     }
 
@@ -57,8 +57,8 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
 
 
         isReloading = false; // シーン変更が完了したのでリセット
-           //デバッグ用一旦シーン遷移が正しくできるか確認のため
-      
+                             //デバッグ用一旦シーン遷移が正しくできるか確認のため
+
     }
     public void ReloadCurrentScene()
     {
@@ -121,10 +121,10 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
             case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Result):
                 bgmName = "BGM_result"; // ステージ1のBGM名
                 break;
-       
-           
 
-          
+
+
+
             default:
                 Debug.LogWarning($"No BGM assigned for the scene '{sceneName}'.");
                 return; // BGMが指定されていない場合は終了
@@ -132,13 +132,12 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
 
         if (!string.IsNullOrEmpty(bgmName))
         {
-            if (MultiAudio_Yamashina.ins.bgmSource != null)
-            {
-                MultiAudio_Yamashina.ins.PlayBGM_ByName(bgmName); // BGMを再生
 
-            }
+            MultiAudio_Yamashina.ins.PlayBGM_ByName(bgmName); // BGMを再生
 
-           
+
+
+
 
 
             Debug.Log(bgmName);
@@ -231,9 +230,9 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
             fadeInstance.color = fadeColor; // 更新
             yield return null;
         }
-        
+
         // **シーン遷移処理**
-        if (sceneInformation.GetNextSceneInt() >sceneInformation.sceneCount.Length)
+        if (sceneInformation.GetNextSceneInt() > sceneInformation.sceneCount.Length)
         {
             // 最後のシーンの後はタイトルへ
             stageName = sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Title);
@@ -244,7 +243,7 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
         {
             yield return null;
         }
-        
+
 
 
         StartCoroutine(FadeIn()); // フェードイン開始

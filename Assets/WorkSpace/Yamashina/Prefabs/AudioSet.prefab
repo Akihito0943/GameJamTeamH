@@ -41,11 +41,11 @@ AudioSource:
   m_GameObject: {fileID: 8384801021295699}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -4108538381236679251, guid: f69f91091161b664ab1abc8e8815769c, type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -139,6 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5009803700500600058}
   - component: {fileID: 2056088818300529005}
+  - component: {fileID: 6453322123314837284}
   m_Layer: 0
   m_Name: AudioSet
   m_TagString: BGM
@@ -189,10 +190,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: efee8b85821d0f246bf561abf61ca009, type: 3}
   - {fileID: 8300000, guid: f93ddc90c6ad34144bc42fceaea0ca0d, type: 3}
   - {fileID: 8300000, guid: 70022ad3a7e9c624fbab08812cda2143, type: 3}
-  bgmSource: {fileID: 6852113580496414506}
-  seSource: {fileID: 4651609467027161685}
+  - {fileID: 8300000, guid: ec47675817d590e48a195445be2d0835, type: 3}
+  bgmSource: {fileID: 0}
+  seSource: {fileID: 0}
   bgmMixerGroup: {fileID: -4108538381236679251, guid: f69f91091161b664ab1abc8e8815769c, type: 2}
   seMixerGroup: {fileID: -2155192936819050110, guid: f69f91091161b664ab1abc8e8815769c, type: 2}
+--- !u!114 &6453322123314837284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178248624856292866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a810d92525e7dff41b5f15a418ef6eb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1553061318831934779
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,11 +248,11 @@ AudioSource:
   m_GameObject: {fileID: 1553061318831934779}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -2155192936819050110, guid: f69f91091161b664ab1abc8e8815769c, type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 484aa26a6ec4e4c469c3929da934ab91, type: 3}
   m_Resource: {fileID: 8300000, guid: 484aa26a6ec4e4c469c3929da934ab91, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

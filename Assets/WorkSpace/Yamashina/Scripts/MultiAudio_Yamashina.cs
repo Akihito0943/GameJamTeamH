@@ -38,15 +38,19 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
         // Initialize dictionaries for easy access by name
         InitializeDictionaries();
-        if (bgmSource == null || seSource == null)
-        {
-            bgmSource = GameObject.FindWithTag("BGM").GetComponent<AudioSource>();
-            ;
-            seSource = GameObject.FindWithTag("SE").GetComponent<AudioSource>();
+
+        bgmSource=transform.Find("BGM").GetComponent<AudioSource>();
+        Debug.Log(bgmSource);
+        seSource = transform.Find("SE").GetComponent<AudioSource>();
+        Debug.Log(seSource);
+        Audiovolume_Yamashina.audioSourceBGM = bgmSource;
+
+        Audiovolume_Yamashina.audioSourceSE = seSource;
 
 
 
-        }
+
+
     }
 
     private void Start()

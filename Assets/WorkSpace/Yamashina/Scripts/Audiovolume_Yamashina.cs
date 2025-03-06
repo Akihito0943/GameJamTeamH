@@ -33,9 +33,7 @@ public class Audiovolume_Yamashina : MonoBehaviour
     // オーディオソースの初期化
     public static void InitializeAudioSources()
     {
-        // BGM、SE 用のオーディオソースを取得
-        audioSourceBGM = GameObject.FindWithTag("BGM")?.GetComponent<AudioSource>();
-        audioSourceSE = GameObject.FindWithTag("SE")?.GetComponent<AudioSource>();
+      
 
         // 文字送り用SEと草をかき分けるSE用のオーディオソースを取得
         // 取得したBGM、SEオーディオソースに音量を適用
