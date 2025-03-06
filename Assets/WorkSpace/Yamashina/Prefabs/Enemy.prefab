@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9182795854812588229}
   - component: {fileID: 1584791368073817225}
   - component: {fileID: 6619333948361386036}
+  - component: {fileID: 6193018649037663865}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -147,8 +148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 277cbbe72462ede42a268139d6d26d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 2
+  tilemap: {fileID: 0}
+  holeTile: {fileID: 11400000, guid: 4a9b4828b9e948c41991b0da40eabc8a, type: 2}
   enemyJumpPower: 10
+  normalSpeed: 2
 --- !u!50 &6619333948361386036
 Rigidbody2D:
   serializedVersion: 4
@@ -176,3 +179,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!95 &6193018649037663865
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167335593238881046}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e99f9efe12a6e7458f20643f7350d04, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
