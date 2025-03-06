@@ -17,6 +17,7 @@ public class BGScroll_Kumagae : MonoBehaviour
     {
         // カメラの初期座標を取得
         lastCameraPos = Camera.main.transform.position;
+        lastCameraPos.x -= 2;
 
         Debug.Log("画像の初期座標" + image.transform.position);
         Debug.Log("カメラの初期座標" + lastCameraPos);
