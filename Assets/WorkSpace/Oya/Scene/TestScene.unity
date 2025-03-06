@@ -278,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 479888960}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.521, y: 0.151, z: 0}
+  m_LocalPosition: {x: 0.343, y: 0.151, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -335,7 +335,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &973247493
@@ -383,6 +383,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899ea6691c7af1649a6d80288726f53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 357909392762623290, guid: 6413a95cec933a04dbacafbf290d30ad, type: 3}
+  bulletTransform: {fileID: 479888961}
+  animator: {fileID: 1977641188}
+  coolTime: 100
+  maxCoolTime: 100
 --- !u!1 &1252903645
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +485,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9029780248838342533, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
   m_PrefabInstance: {fileID: 6081217899327235666}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1977641188 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4780148098357540639, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+  m_PrefabInstance: {fileID: 6081217899327235666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2535873192868148062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,6 +570,14 @@ PrefabInstance:
     - target: {fileID: 3105702699671071934, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4693075718893311747, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938069040146448403, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5664888955472195874, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -684,11 +702,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6235521203369318364, guid: 29981d8d40a546e4da9801e3f53648d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.28
+      value: -3.77
       objectReference: {fileID: 0}
     - target: {fileID: 6235521203369318364, guid: 29981d8d40a546e4da9801e3f53648d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.79
+      value: 2.32
       objectReference: {fileID: 0}
     - target: {fileID: 6235521203369318364, guid: 29981d8d40a546e4da9801e3f53648d2, type: 3}
       propertyPath: m_LocalPosition.z
