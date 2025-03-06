@@ -40,7 +40,7 @@ public class MultiAudio_Yamashina : MonoBehaviour
         InitializeDictionaries();
         if (bgmSource == null || seSource == null)
         {
-            bgmSource = GameObject.FindWithTag("BGM")?.GetComponent<AudioSource>();
+            bgmSource = GameObject.FindWithTag("BGM").GetComponent<AudioSource>();
             ;
             seSource = GameObject.FindWithTag("SE").GetComponent<AudioSource>();
 
