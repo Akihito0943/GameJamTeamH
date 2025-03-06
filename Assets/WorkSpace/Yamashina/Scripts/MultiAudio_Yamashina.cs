@@ -38,23 +38,28 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
         // Initialize dictionaries for easy access by name
         InitializeDictionaries();
-        bgmSource = GameObject.FindWithTag("BGM").GetComponent<AudioSource>();
-        seSource = GameObject.FindWithTag("SE").GetComponent<AudioSource>();
+        if (bgmSource == null || seSource == null)
+        {
+            bgmSource = GameObject.FindWithTag("BGM")?.GetComponent<AudioSource>();
+            ;
+            seSource = GameObject.FindWithTag("SE").GetComponent<AudioSource>();
 
 
+
+        }
     }
 
     private void Start()
     {
-       
-         // Assign mixer groups to the audio sources
+
+        // Assign mixer groups to the audio sources
         if (bgmSource != null) bgmSource.outputAudioMixerGroup = bgmMixerGroup;
         if (seSource != null)
         {
             seSource.outputAudioMixerGroup = seMixerGroup;
         }
 
-      
+
     }
 
     private void InitializeDictionaries()
@@ -73,7 +78,7 @@ public class MultiAudio_Yamashina : MonoBehaviour
             BGMClipDictionary[clip.name] = clip;
         }
 
-      
+
     }
 
     public void PlayBGM_ByName(string bgmName)
@@ -108,11 +113,11 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
     }
 
-    
+
 
     private void PlaySE(AudioClip clip)
     {
-     
+
         if (clip != null)
         {
             seSource.clip = clip;
@@ -125,7 +130,7 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
     }
 
-    
+
 
     private void PlayBGM(AudioClip clip)
     {
@@ -154,5 +159,5 @@ public class MultiAudio_Yamashina : MonoBehaviour
         }
     }
 
-    
+
 }

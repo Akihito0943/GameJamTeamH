@@ -32,8 +32,8 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         int seconds = totalSeconds % 60;  // 余った秒を計算
         elapsedTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         throwCountText.text = "";
-        restartButton.onClick.AddListener(() => DestroyGameManager());
-        titleButton.onClick.AddListener(() => DestroyGameManager());
+        restartButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange_Restart());
+        titleButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange());
 
         // GameManager の状態によって画像を変更
         switch (GameManager_Yamashina.GetState())
@@ -53,8 +53,18 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         }
     }
 
-    void DestroyGameManager()
+    void DestroyGameManager_WithSceneChange()
     {
-        Destroy(GameManager_Yamashina.instance.gameObject);
+        SceneTransitionManager_Yamashina.instance.NextSceneButton(0);
+        GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.None);
+
+
+    }
+    void DestroyGameManager_WithSceneChange_Restart()
+
+    {
+        SceneTransitionManager_Yamashina.instance.NextSceneButton(1);
+        GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.None);
+
     }
 }
