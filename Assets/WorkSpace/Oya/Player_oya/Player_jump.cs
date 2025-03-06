@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_jump : MonoBehaviour
 {
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D  rigidbody2D;
     private bool isGround = true;
     [Header("ƒWƒƒƒ“ƒv—Í")]
     [SerializeField]float jumpPower = 5.0f;
