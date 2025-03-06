@@ -89,6 +89,8 @@ public class EnemyController_Yamashina : MonoBehaviour
         // viewPos.x が 0 未満または 1 を超えていたら、背景の左右の端に到達しているとみなせる
         if (viewPos.x < 0 || viewPos.x > 1)
         {
+            GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.Escaped);
+
             SceneTransitionManager_Yamashina.instance.GoToNextScene(SceneTransitionManager_Yamashina.instance.sceneInformation.GetNextSceneInt());
         }
     }
@@ -135,6 +137,8 @@ public class EnemyController_Yamashina : MonoBehaviour
             {
                 animator.SetBool("IsAttacked", true);
                 IsAttacked = true;
+                GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.Defeated);
+
                 StartCoroutine(StopMovementAndResetAttack());
 
 
