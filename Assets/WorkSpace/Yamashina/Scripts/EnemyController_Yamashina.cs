@@ -127,7 +127,7 @@ public class EnemyController_Yamashina : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.CompareTag("Item"))
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             // ���݈ʒu�����̃^�C�����ǂ�������
             if (!IsAttacked)
