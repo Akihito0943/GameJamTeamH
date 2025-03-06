@@ -81,6 +81,15 @@ public class EnemyController_Yamashina : MonoBehaviour
             IsAttacked = false;
             animator.SetBool("IsAttacked", false);
 
+
+        }
+        // 敵の現在位置をビューポート座標に変換
+        Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
+
+        // viewPos.x が 0 未満または 1 を超えていたら、背景の左右の端に到達しているとみなせる
+        if (viewPos.x < 0 || viewPos.x > 1)
+        {
+            SceneTransitionManager_Yamashina.instance.GoToNextScene(SceneTransitionManager_Yamashina.instance.sceneInformation.GetNextSceneInt());
         }
     }
 
