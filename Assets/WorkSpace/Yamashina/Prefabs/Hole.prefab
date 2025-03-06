@@ -75,7 +75,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1817189795642383941}
   m_Father: {fileID: 8933266821063674016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &4881117414616040175
@@ -110,14 +111,14 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 4a9b4828b9e948c41991b0da40eabc8a, type: 2}
+    m_Data: {fileID: 11400000, guid: 0a3ae28ddfa7e414b948d8d4ad837638, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 6feca38d2af661344a50a97417823dc4, type: 2}
+    m_Data: {fileID: 11400000, guid: 21209ec82a9e78947933793545798d26, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: -658909412, guid: 15e2e0a84afcdcd479ed3552d2b7aca2, type: 3}
+    m_Data: {fileID: -6517987408519098156, guid: 9535eea71070cf74ab7730fc24c347d1, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8052925080207475004, guid: 9568651992fbf2b4caa3fa8b473b3d6d, type: 3}
+    m_Data: {fileID: -8712641876740161571, guid: a33a5e6791635364e99612047aa3a9ad, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 2
     m_Data:
@@ -215,7 +216,69 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &97004025770591955
+--- !u!1001 &2716222527956555899
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 545629391928217313}
+    m_Modifications:
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.639999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412273672961398615, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+      propertyPath: m_Name
+      value: SmallObstacle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+--- !u!4 &1817189795642383941 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4361174950224660030, guid: 865faf6ea11a58f4ca38ef79a8e156a6, type: 3}
+  m_PrefabInstance: {fileID: 2716222527956555899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289846199653375195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
