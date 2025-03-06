@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class Player_auto_run_oya : MonoBehaviour
 {
-    [SerializeField] float speed;
+    [SerializeField] float speed = 1.0f;
     [SerializeField] float accelMultiplier = 2f; // 加速時の倍率
     [SerializeField] float accelDuration = 2f; // 加速する時間（秒）
-
+    private float originalSpeed;
     private bool isAccelerating = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        originalSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
+        Debug.Log(speed.ToString());
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,21 +29,21 @@ public class Player_auto_run_oya : MonoBehaviour
         }
         if (collision.gameObject.tag == "Item")
         {
-            ChangeSpeed(20);
+            ChangeSpeed(5);
         }
 
     }
     private void ChangeSpeed(float accelMultiplier)
     {
+        StartCoroutine(Accelerate(accelMultiplier));
+
         if (!isAccelerating) // すでに加速中でなければ開始
         {
-            StartCoroutine(Accelerate(accelMultiplier));
         }
     }
     private IEnumerator Accelerate(float accelMultiplier)
     {
         isAccelerating = true;
-        float originalSpeed = speed;
         speed *= accelMultiplier; // 加速
 
         yield return new WaitForSeconds(accelDuration); // 指定時間待つ
