@@ -43,14 +43,6 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-
-
-       
-
-
-    }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log($"Scene Loaded: {scene.name}");
@@ -124,17 +116,15 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
 
             case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Main):
 
-                bgmName = "BGM_stage_01";
+                bgmName = "BGM_stage";
                 break;
             case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.Result):
-                bgmName = "BGM_stage_01"; // ステージ1のBGM名
+                bgmName = "BGM_result"; // ステージ1のBGM名
                 break;
        
            
 
-            case string name when name == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.End):
-                bgmName = "BGM_credit";
-                break;
+          
             default:
                 Debug.LogWarning($"No BGM assigned for the scene '{sceneName}'.");
                 return; // BGMが指定されていない場合は終了
@@ -142,11 +132,13 @@ public class SceneTransitionManager_Yamashina : MonoBehaviour
 
         if (!string.IsNullOrEmpty(bgmName))
         {
-
-            if (sceneName == sceneInformation.GetSceneName(SceneInformation_Yamashina.SCENE.End))
+            if (MultiAudio_Yamashina.ins.bgmSource != null)
             {
+                MultiAudio_Yamashina.ins.PlayBGM_ByName(bgmName); // BGMを再生
 
             }
+
+           
 
 
             Debug.Log(bgmName);
