@@ -5,8 +5,9 @@ using UnityEngine;
 public class Player_auto_run_oya : MonoBehaviour
 {
     [SerializeField] float speed = 1.0f;
-    [SerializeField] float accelMultiplier = 2f; // ‰Á‘¬‚Ì”{—¦
-    [SerializeField] float accelDuration = 2f; // ‰Á‘¬‚·‚éŠÔi•bj
+    [SerializeField,Header("‰Á‘¬‚Ì”{—¦")] float accelMultiplier = 2f; // ‰Á‘¬‚Ì”{—¦
+    
+    [SerializeField,Header("‰Á‘¬,Œ¸‘¬‚·‚éŠÔ")] float accelDuration = 2f; // ‰Á‘¬‚·‚éŠÔi•bj
     private float originalSpeed;
     private bool isAccelerating = false;
     // Start is called before the first frame update
