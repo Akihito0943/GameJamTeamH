@@ -492,6 +492,7 @@ GameObject:
   - component: {fileID: 939034972}
   - component: {fileID: 939034971}
   - component: {fileID: 939034970}
+  - component: {fileID: 939034973}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -573,6 +574,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939034973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939034969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2534ed174be502649bbf0977d3206b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultImage: {fileID: 1505341157}
+  resultTextImage: {fileID: 1225310418}
+  restartButton: {fileID: 1464745127}
+  titleButton: {fileID: 1405251578}
+  elapsedTimeText: {fileID: 573080388}
+  throwCountText: {fileID: 495338547}
+  VictoriousSprite: {fileID: -5327709077520125481, guid: 4a5789aafe56cf1439fe9a343c6513c4, type: 3}
+  defeatedSprite: {fileID: 2612275155311057872, guid: ad44520c17a7f5b47ad266e2da3b4cf3, type: 3}
+  VictoriousTextSprite: {fileID: -8277244179623539392, guid: f7442de7047faf941809177278c1a180, type: 3}
+  defeatedTextSprite: {fileID: 2395158100669332950, guid: 3da3cb67ceaf3f6408d1c72b18c880ca, type: 3}
 --- !u!1 &1065935455
 GameObject:
   m_ObjectHideFlags: 0
