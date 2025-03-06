@@ -86,7 +86,7 @@ public class SceneInformation_Yamashina : ScriptableObject
     public int GetNextSceneInt()
     
     {
-        return (int)nextScene;
+        return GetCurrentSceneInt()+1;
     } 
 
     public void UpdateScene(SCENE newScene)
@@ -107,10 +107,12 @@ public class SceneInformation_Yamashina : ScriptableObject
                 break;
                 case SCENE.Main:
                 nextScene = SCENE.Result; 
-                break;     
+                break;
 
-            
-            
+            case SCENE.Result:
+                newScene = SCENE.End;
+                break;
+
             default:
                 nextScene = SCENE.End;
                 break;
