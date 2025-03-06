@@ -7,8 +7,8 @@ public class BGScroll_Kumagae : MonoBehaviour
 {
     // 背景スクロールを行うイメージコンポーネント
     [Header("イメージ")]
-    [SerializeField] Image image;
-
+    [SerializeField] RectTransform image;
+    
     private Vector3 lastCameraPos;
     private Vector2 texOffset = Vector2.zero;
 
@@ -18,16 +18,16 @@ public class BGScroll_Kumagae : MonoBehaviour
         // カメラの初期座標を取得
         lastCameraPos = Camera.main.transform.position;
 
-        //image.transform.position = 
-        //    new Vector3(Camera.main.transform.position.x, image.transform.position.y, image.transform.position.z);
-
-        Debug.Log(image.transform.position.x);
-        Debug.Log(lastCameraPos);
+        Debug.Log("画像の初期座標" + image.transform.position.x);
+        Debug.Log("カメラの初期座標" + lastCameraPos);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        Debug.Log("画像の初期座標" + image.transform.position.x);
+       // Debug.Log("カメラの初期座標" + lastCameraPos);
 
         Vector2 cameraMoveSpeed = Camera.main.transform.position - lastCameraPos;
 
