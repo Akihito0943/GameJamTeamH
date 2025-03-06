@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class EnemyController_Yamashina : MonoBehaviour
@@ -9,6 +10,14 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     private Rigidbody2D rigidBody2D_Enemy;
     private bool jumpFlag = false;
+    private bool IsAttacked = false;
+
+    enum EnemyState
+    {
+        STOP,
+        ACTION,
+    }
+    private EnemyState enemyState;
 
     [SerializeField, Header("ジャンプ力")]
     private float enemyJumpPower;
@@ -18,7 +27,8 @@ public class EnemyController_Yamashina : MonoBehaviour
     private void Start()
     {
         rigidBody2D_Enemy = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();
+        enemyState = EnemyState.STOP;
     }
 
     protected virtual void Update()
@@ -45,6 +55,12 @@ public class EnemyController_Yamashina : MonoBehaviour
         if (currentTile == holeTile && !jumpFlag)
         {
             Jump();
+        }
+        if (IsAttacked && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f && !animator.IsInTransition(0))
+        {
+            IsAttacked = false;
+            animator.SetBool("IsAttacked", false);
+
         }
     }
 
@@ -78,6 +94,18 @@ public class EnemyController_Yamashina : MonoBehaviour
             {
                 Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
                 Jump(); 
+            }
+        }
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            // ���݈ʒu�����̃^�C�����ǂ�������
+            if (!IsAttacked)
+
+            {
+                animator.SetBool("IsAttacked", true);
+                IsAttacked = true;
+
             }
         }
     }
