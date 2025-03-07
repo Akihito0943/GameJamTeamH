@@ -17,15 +17,25 @@ public class Player_auto_run_oya : MonoBehaviour
     [SerializeField, Header("障害物に当たった時の効果音")] AudioClip acObstacle;
     [SerializeField, Header("アイテムに当たった時の効果音")] AudioClip acItem;
 
+
+    // 煙エフェクトをコントロールする
+    private SmokeVFX_Kumagae smoke;
+
     // 元の速度を保持する変数
     private float originalSpeed;
+
+    // 元の土煙エフェクトのスケール
+    private Vector3 originalSmokeScale;
 
     // Start is called before the first frame update
     void Start()
     {
         originalSpeed = speed;
 
-
+        // コンポーネント取得
+        smoke = GetComponent<SmokeVFX_Kumagae>();
+        originalSmokeScale = new Vector3(0.35f, 0.35f, 0.35f);
+        
         // 足音をループ再生する
         audioSourceRun.Play();
         audioSourceRun.loop = true;
@@ -50,13 +60,15 @@ public class Player_auto_run_oya : MonoBehaviour
             audioSourceRun.pitch = 0.8f;
             // 障害物に当たった時の効果音再生            
             audioSourceSE.PlayOneShot(acObstacle);
+            // 煙エフェクトを小さくする
+            smoke.SetSmokeScale(new Vector3(0.2f, 0.2f, 0.2f));
         }
 
         // アイテムに当たったら移動速度増加させる
         if (collision.gameObject.tag == "Item")
         {
              ChangeSpeed(accelPower);
-            // 障害物に当たった時の効果音再生            
+            // アイテムに当たった時の効果音再生            
             audioSourceSE.PlayOneShot(acItem);
         }
     }
@@ -91,5 +103,7 @@ public class Player_auto_run_oya : MonoBehaviour
         GetComponent<Animator>().SetBool("IsObstacleHit", false);
         // 足音を通常速度に戻す
         audioSourceRun.pitch = 1.0f;
+        // 煙エフェクトを通常サイズにする
+        smoke.SetSmokeScale(originalSmokeScale);
     }
 }

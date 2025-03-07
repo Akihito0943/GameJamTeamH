@@ -17,6 +17,8 @@ public class Player_jump : MonoBehaviour
 
     [SerializeField, Header("走る用のオーディオソース")] AudioSource audioSourceRun;
 
+    [SerializeField, Header("土煙エフェクトオブジェクト")] GameObject goSmoke;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,8 @@ public class Player_jump : MonoBehaviour
             // ジャンプ力を適用
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpPower);
             audioSourceSE.PlayOneShot(acJump);
+            // 土煙エフェクトを止める
+            goSmoke.SetActive(false);
         }
     }
 
@@ -45,6 +49,8 @@ public class Player_jump : MonoBehaviour
             isGround = true;
             animator.SetBool("isInair", true);
             audioSourceRun.Play();
+            // 土煙エフェクトを出す
+            goSmoke.SetActive(true);
         }
 
     }

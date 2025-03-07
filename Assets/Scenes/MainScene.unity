@@ -242,11 +242,6 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 8566044954663190863, guid: b739314c6ca40dd409c82dbd2b331fcc, type: 3}
   m_PrefabInstance: {fileID: 5120849106346325119}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &697987309 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6107596661450771957, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-  m_PrefabInstance: {fileID: 1363071680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1839735485 &707311300 stripped
 Tilemap:
   m_CorrespondingSourceObject: {fileID: 503937561431080531, guid: 13486af8551a414469abdeb258876650, type: 3}
@@ -465,30 +460,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 770908969311465132, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: goSmoke
+      value: 
+      objectReference: {fileID: 1541952846}
+    - target: {fileID: 1980454462316422418, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: goSmoke
+      value: 
+      objectReference: {fileID: 1541952846}
     - target: {fileID: 3105702699671071934, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3105702699671071934, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780148098357540639, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f2c1d592e82c82847bb65f920fc5efcf, type: 2}
-    - target: {fileID: 7304434502818966913, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: acFall
-      value: 
-      objectReference: {fileID: 8300000, guid: c98e01de11fb5614fa54686061b04e23, type: 3}
     - target: {fileID: 7304434502818966913, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: cvFadeIn
       value: 
       objectReference: {fileID: 535108347}
-    - target: {fileID: 7304434502818966913, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: audioSourceSE
-      value: 
-      objectReference: {fileID: 697987309}
+    - target: {fileID: 8003471767401352849, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9029780248838342533, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.92
@@ -532,12 +523,20 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3105702699671071934, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064981663}
   m_SourcePrefab: {fileID: 100100000, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
 --- !u!1 &1418819304 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8167335593238881046, guid: dcab049f3dac57946941bdaf1c8ee966, type: 3}
   m_PrefabInstance: {fileID: 1184923024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1541952846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8003471767401352851, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+  m_PrefabInstance: {fileID: 1363071680}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1607690129
 GameObject:
@@ -669,6 +668,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3105702699671071934, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
   m_PrefabInstance: {fileID: 1363071680}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2064981663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064981655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5cabdfaffcd3db4b8ebee464ffd773a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goSmoke: {fileID: 1541952846}
 --- !u!1001 &909202114163648260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -680,6 +692,10 @@ PrefabInstance:
     - target: {fileID: 350213423442123455, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
       propertyPath: m_Name
       value: CutSceneObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179277685203533893, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.045
       objectReference: {fileID: 0}
     - target: {fileID: 3900367342457587881, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -725,6 +741,10 @@ PrefabInstance:
       propertyPath: trPlayer
       value: 
       objectReference: {fileID: 1360908444}
+    - target: {fileID: 6932450949673352968, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.18
+      objectReference: {fileID: 0}
     - target: {fileID: 8201714103983273046, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
       propertyPath: enemy
       value: 
