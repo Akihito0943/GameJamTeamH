@@ -75,12 +75,10 @@ public class EnemyController_Yamashina : MonoBehaviour
 
         // エネミーの位置をタイルマップの座標に変換
         Vector3Int tilePosition = tilemap.WorldToCell(transform.position);
-        tilePosition.y = -6;
+        tilePosition.y = tilePosition.y - 3;
 
         // 現在位置のタイルを取得
         TileBase currentTile = tilemap.GetTile(tilePosition);
-
-        Debug.Log(tilePosition);
 
         if (currentTile) { Debug.Log("タイルあり"); }
         else Debug.Log("タイルなし");
@@ -113,7 +111,6 @@ public class EnemyController_Yamashina : MonoBehaviour
     {
         if (!jumpFlag)
         {
-            rigidBody2D_Enemy.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             rigidBody2D_Enemy.AddForce(Vector2.up * enemyJumpPower, ForceMode2D.Impulse);
             jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
             animator.SetBool("jumpFlag", true);
@@ -130,7 +127,6 @@ public class EnemyController_Yamashina : MonoBehaviour
         {
             jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
 
-            rigidBody2D_Enemy.constraints |= RigidbodyConstraints2D.FreezePositionY;
             Debug.Log("着地した");
             animator.SetBool("jumpFlag", false);
             // 足音を再び再生する
