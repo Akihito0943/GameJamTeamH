@@ -17,6 +17,14 @@ public class Bullet_Kumagae : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // 地面に接触したら弾を削除する
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
+    }
 
     /// <summary>
     /// 弾の速度を取得する
