@@ -35,6 +35,17 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
     flags: 2
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 0}
+    - time: 0.43333334
+      value: {fileID: 0}
+    attribute: fireEffect
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: d7ad7d047e05c66428b573f8bb6e8c5e, type: 3}
+    flags: 2
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -51,18 +62,29 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 0
+      attribute: 4165397366
+      script: {fileID: 11500000, guid: d7ad7d047e05c66428b573f8bb6e8c5e, type: 3}
+      typeID: 114
+      customType: 0
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 21300000, guid: 988d9fd09c18c984e8356b27f99bc98b, type: 3}
     - {fileID: 21300000, guid: be2638100242e7143896fae653b080b0, type: 3}
     - {fileID: 21300000, guid: 068c29f72c474824d99b691d25b1ff7e, type: 3}
     - {fileID: 21300000, guid: 399850d5620570f48993c28cf1cea4c6, type: 3}
     - {fileID: 21300000, guid: f3a919657135939468d9a11f194bddbd, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.43333334
+    m_StopTime: 0.45000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

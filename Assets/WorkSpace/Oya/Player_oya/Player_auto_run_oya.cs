@@ -53,7 +53,7 @@ public class Player_auto_run_oya : MonoBehaviour
         // アイテムに当たったら移動速度増加させる
         if (collision.gameObject.tag == "Item")
         {
-            ChangeSpeed(accelPower);
+             ChangeSpeed(accelPower);
             // 障害物に当たった時の効果音再生            
             audioSourceSE.PlayOneShot(acItem);
         }
@@ -83,9 +83,9 @@ public class Player_auto_run_oya : MonoBehaviour
         }
         // 一定時間待つ
         yield return new WaitForSeconds(accelDuration);
-
         // 元の移動速度に戻す
         speed = originalSpeed;
+
         GetComponent<Animator>().SetBool("IsObstacleHit", false);
         // 足音を通常速度に戻す
         audioSourceRun.pitch = 1.0f;

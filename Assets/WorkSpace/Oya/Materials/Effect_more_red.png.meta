@@ -1,0 +1,1889 @@
+fileFormatVersion: 2
+guid: 23bf3b34e76be284e8e79cb181d8a68b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1164167592527760124
+    second: Effect_more_red_0
+  - first:
+      213: 7760717786345890123
+    second: Effect_more_red_1
+  - first:
+      213: 190652487587729269
+    second: Effect_more_red_2
+  - first:
+      213: -4405168486100483241
+    second: Effect_more_red_3
+  - first:
+      213: 8317483438680723192
+    second: Effect_more_red_4
+  - first:
+      213: -1804764683562134242
+    second: Effect_more_red_5
+  - first:
+      213: -624974868817913330
+    second: Effect_more_red_6
+  - first:
+      213: 8102118560902587275
+    second: Effect_more_red_7
+  - first:
+      213: 6225298997747497685
+    second: Effect_more_red_8
+  - first:
+      213: -8130760652230541009
+    second: Effect_more_red_9
+  - first:
+      213: 5633460880808563063
+    second: Effect_more_red_10
+  - first:
+      213: -4769544148683677254
+    second: Effect_more_red_11
+  - first:
+      213: -6910381319449388891
+    second: Effect_more_red_12
+  - first:
+      213: 966787785772177500
+    second: Effect_more_red_13
+  - first:
+      213: -2258494183906106468
+    second: Effect_more_red_14
+  - first:
+      213: 1555804159265421489
+    second: Effect_more_red_15
+  - first:
+      213: 8107742601739327875
+    second: Effect_more_red_16
+  - first:
+      213: -8051807930491583058
+    second: Effect_more_red_17
+  - first:
+      213: -4988507058454179448
+    second: Effect_more_red_18
+  - first:
+      213: -7841803033124718542
+    second: Effect_more_red_19
+  - first:
+      213: 8245924952745656925
+    second: Effect_more_red_20
+  - first:
+      213: -42350167489210093
+    second: Effect_more_red_21
+  - first:
+      213: 5993427455074749010
+    second: Effect_more_red_22
+  - first:
+      213: 6746222420817939549
+    second: Effect_more_red_23
+  - first:
+      213: 6345558500356578605
+    second: Effect_more_red_24
+  - first:
+      213: -5201149754775445218
+    second: Effect_more_red_25
+  - first:
+      213: 8479023278052401327
+    second: Effect_more_red_26
+  - first:
+      213: 7664172236527950343
+    second: Effect_more_red_27
+  - first:
+      213: 5591434503255354765
+    second: Effect_more_red_28
+  - first:
+      213: 6444660741335965879
+    second: Effect_more_red_29
+  - first:
+      213: 2881500012030513871
+    second: Effect_more_red_30
+  - first:
+      213: -4060946733282246989
+    second: Effect_more_red_31
+  - first:
+      213: 3077972433620096344
+    second: Effect_more_red_32
+  - first:
+      213: 2753258091671712876
+    second: Effect_more_red_33
+  - first:
+      213: -8349560154352857021
+    second: Effect_more_red_34
+  - first:
+      213: -830911883200758596
+    second: Effect_more_red_35
+  - first:
+      213: -8479446316845642203
+    second: Effect_more_red_36
+  - first:
+      213: -3019337766029044287
+    second: Effect_more_red_37
+  - first:
+      213: -720634333523323434
+    second: Effect_more_red_38
+  - first:
+      213: -8179878482084325979
+    second: Effect_more_red_39
+  - first:
+      213: -4874784172078937617
+    second: Effect_more_red_40
+  - first:
+      213: 9013898388909273656
+    second: Effect_more_red_41
+  - first:
+      213: -7319254474805859551
+    second: Effect_more_red_42
+  - first:
+      213: -7524271832905349948
+    second: Effect_more_red_43
+  - first:
+      213: 2264980649392033633
+    second: Effect_more_red_44
+  - first:
+      213: -4712980700681112932
+    second: Effect_more_red_45
+  - first:
+      213: 7375811617435645212
+    second: Effect_more_red_46
+  - first:
+      213: -3254456403380027109
+    second: Effect_more_red_47
+  - first:
+      213: -2699611427125084997
+    second: Effect_more_red_48
+  - first:
+      213: 8082967063003193975
+    second: Effect_more_red_49
+  - first:
+      213: -729107803716890810
+    second: Effect_more_red_50
+  - first:
+      213: 6504915656351690096
+    second: Effect_more_red_51
+  - first:
+      213: 173020117774337523
+    second: Effect_more_red_52
+  - first:
+      213: 7964177204267393043
+    second: Effect_more_red_53
+  - first:
+      213: 3327921848091947266
+    second: Effect_more_red_54
+  - first:
+      213: -3184916841650140459
+    second: Effect_more_red_55
+  - first:
+      213: -1835898364914004102
+    second: Effect_more_red_56
+  - first:
+      213: -8060015890952165176
+    second: Effect_more_red_57
+  - first:
+      213: 4349557593506277430
+    second: Effect_more_red_58
+  - first:
+      213: 1167095812246756252
+    second: Effect_more_red_59
+  - first:
+      213: 6133467936872591032
+    second: Effect_more_red_60
+  - first:
+      213: 5602831398359638416
+    second: Effect_more_red_61
+  - first:
+      213: 4061189675484965255
+    second: Effect_more_red_62
+  - first:
+      213: 2899164367735145008
+    second: Effect_more_red_63
+  - first:
+      213: 9153827160781370049
+    second: Effect_more_red_64
+  - first:
+      213: -1437529647125905372
+    second: Effect_more_red_65
+  - first:
+      213: 5346469833014311284
+    second: Effect_more_red_66
+  - first:
+      213: 1099325613916401721
+    second: Effect_more_red_67
+  - first:
+      213: 211393570710715816
+    second: Effect_more_red_68
+  - first:
+      213: 7801716228810720635
+    second: Effect_more_red_69
+  - first:
+      213: 4673236205317649327
+    second: Effect_more_red_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Effect_more_red_0
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 818
+        width: 71
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa83a3e144f72010800000000000000
+      internalID: 1164167592527760124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 791
+        width: 130
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41e33965bb93bb60800000000000000
+      internalID: 7760717786345890123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_2
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 771
+        width: 185
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f06366d6555a200800000000000000
+      internalID: 190652487587729269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 406
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7534c3af992bdd2c0800000000000000
+      internalID: -4405168486100483241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_4
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 391
+        width: 246
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe42cb9e13ad6370800000000000000
+      internalID: 8317483438680723192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_5
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 373
+        width: 282
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15db15151034f6e0800000000000000
+      internalID: -1804764683562134242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 200
+        width: 185
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0adf860ba4a357f0800000000000000
+      internalID: -624974868817913330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_7
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 295
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83a2be77e1807070800000000000000
+      internalID: 8102118560902587275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_8
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 304
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dab5559474b46650800000000000000
+      internalID: 6225298997747497685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_9
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 305
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f214312f34cb92f80800000000000000
+      internalID: -8130760652230541009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_10
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 296
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77157a0e2d21e2e40800000000000000
+      internalID: 5633460880808563063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_11
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 256
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1aa2deddc2fcdb0800000000000000
+      internalID: -4769544148683677254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_12
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 284
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a859bf7dc46910a0800000000000000
+      internalID: -6910381319449388891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_13
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 283
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5813207e58ba6d00800000000000000
+      internalID: 966787785772177500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_14
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 294
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93adf8718738a0e0800000000000000
+      internalID: -2258494183906106468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_15
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 277
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8371dc3a3579510800000000000000
+      internalID: 1555804159265421489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_16
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 284
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38959fa80fc748070800000000000000
+      internalID: 8107742601739327875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_17
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 285
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea54067f85b324090800000000000000
+      internalID: -8051807930491583058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_18
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 275
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8815f45b24345cab0800000000000000
+      internalID: -4988507058454179448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_19
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 23
+        width: 311
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238350460b15c2390800000000000000
+      internalID: -7841803033124718542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_20
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 209
+        width: 67
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d524fe44e096f6270800000000000000
+      internalID: 8245924952745656925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_21
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 232
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31990ae3fba896ff0800000000000000
+      internalID: -42350167489210093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_22
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 249
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25acdce048eec2350800000000000000
+      internalID: 5993427455074749010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_23
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 240
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c01a87c856f9d50800000000000000
+      internalID: 6746222420817939549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_24
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 261
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dd63bf5d3ff0850800000000000000
+      internalID: 6345558500356578605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_25
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 212
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11effadaddc1d7b0800000000000000
+      internalID: -5201149754775445218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_26
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 168
+        width: 51
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0e4926fba8ba570800000000000000
+      internalID: 8479023278052401327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_27
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 154
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ad8a7ea0c9c5a60800000000000000
+      internalID: 7664172236527950343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_28
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 243
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8de5675e04c89d40800000000000000
+      internalID: 5591434503255354765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_29
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 232
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b06c398cc8007950800000000000000
+      internalID: 6444660741335965879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_30
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 187
+        width: 57
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2dc5d7ef42df720800000000000000
+      internalID: 2881500012030513871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_31
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 242
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bebdee367e94a7c0800000000000000
+      internalID: -4060946733282246989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_32
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 181
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855de5ede9727ba20800000000000000
+      internalID: 3077972433620096344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_33
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 70
+        width: 38
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64ff01a5a9853620800000000000000
+      internalID: 2753258091671712876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_34
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 180
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340da090747602c80800000000000000
+      internalID: -8349560154352857021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_35
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 142
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcfa2a6b020874f0800000000000000
+      internalID: -830911883200758596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_36
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 132
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ecb683084f25a80800000000000000
+      internalID: -8479446316845642203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_37
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 149
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5dae68c482916d0800000000000000
+      internalID: -3019337766029044287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_38
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 160
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5546944eacff5f0800000000000000
+      internalID: -720634333523323434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_39
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 159
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a590810cdb3b7e80800000000000000
+      internalID: -8179878482084325979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_40
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 166
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9c98a8f99495cb0800000000000000
+      internalID: -4874784172078937617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_41
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 158
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8323768b3dcc71d70800000000000000
+      internalID: 9013898388909273656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_42
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 166
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b228095d8cc6a90800000000000000
+      internalID: -7319254474805859551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_43
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 149
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4033e12aa649790800000000000000
+      internalID: -7524271832905349948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_44
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 136
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f452676e3de6f10800000000000000
+      internalID: 2264980649392033633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_45
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 131
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9271aee501289eb0800000000000000
+      internalID: -4712980700681112932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_46
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 95
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15737b56952c5660800000000000000
+      internalID: 7375811617435645212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_47
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 120
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11c98bd429d5d2d0800000000000000
+      internalID: -3254456403380027109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_48
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 97
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcbf9ec5bd098ad0800000000000000
+      internalID: -2699611427125084997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_49
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 103
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772ec79e7b77c2070800000000000000
+      internalID: 8082967063003193975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_50
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 83
+        width: 29
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f4d74c050b1e5f0800000000000000
+      internalID: -729107803716890810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_51
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 115
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d28be235a164a50800000000000000
+      internalID: 6504915656351690096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_52
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 41
+        width: 69
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f58fe261e0b66200800000000000000
+      internalID: 173020117774337523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_53
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 91
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3102f94a8f0768e60800000000000000
+      internalID: 7964177204267393043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_54
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 12
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20138cbe9472f2e20800000000000000
+      internalID: 3327921848091947266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_55
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 92
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dac846c107ecc3d0800000000000000
+      internalID: -3184916841650140459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_56
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 61
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f84930a249586e0800000000000000
+      internalID: -1835898364914004102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_57
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 74
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8eacf3042152090800000000000000
+      internalID: -8060015890952165176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_58
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 27
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6386b0b169bbc5c30800000000000000
+      internalID: 4349557593506277430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_59
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 69
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b50db257b523010800000000000000
+      internalID: 1167095812246756252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_60
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 69
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bee98297947e1550800000000000000
+      internalID: 6133467936872591032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_61
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 78
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091a1a3c87141cd40800000000000000
+      internalID: 5602831398359638416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_62
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 93
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789e3c42e7e3c5830800000000000000
+      internalID: 4061189675484965255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_63
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 80
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032c25cc1a6eb3820800000000000000
+      internalID: 2899164367735145008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_64
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 41
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c232bdbd4de80f70800000000000000
+      internalID: 9153827160781370049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_65
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 56
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420c7fcf66edc0ce0800000000000000
+      internalID: -1437529647125905372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_66
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 39
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479f82f7cf9723a40800000000000000
+      internalID: 5346469833014311284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_67
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 54
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930b9f542d6914f00800000000000000
+      internalID: 1099325613916401721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_68
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 31
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad730225550fe200800000000000000
+      internalID: 211393570710715816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_69
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 30
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75c9a82393454c60800000000000000
+      internalID: 7801716228810720635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_more_red_70
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 14
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3f371a19baad040800000000000000
+      internalID: 4673236205317649327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Effect_more_red_0: 1164167592527760124
+      Effect_more_red_1: 7760717786345890123
+      Effect_more_red_10: 5633460880808563063
+      Effect_more_red_11: -4769544148683677254
+      Effect_more_red_12: -6910381319449388891
+      Effect_more_red_13: 966787785772177500
+      Effect_more_red_14: -2258494183906106468
+      Effect_more_red_15: 1555804159265421489
+      Effect_more_red_16: 8107742601739327875
+      Effect_more_red_17: -8051807930491583058
+      Effect_more_red_18: -4988507058454179448
+      Effect_more_red_19: -7841803033124718542
+      Effect_more_red_2: 190652487587729269
+      Effect_more_red_20: 8245924952745656925
+      Effect_more_red_21: -42350167489210093
+      Effect_more_red_22: 5993427455074749010
+      Effect_more_red_23: 6746222420817939549
+      Effect_more_red_24: 6345558500356578605
+      Effect_more_red_25: -5201149754775445218
+      Effect_more_red_26: 8479023278052401327
+      Effect_more_red_27: 7664172236527950343
+      Effect_more_red_28: 5591434503255354765
+      Effect_more_red_29: 6444660741335965879
+      Effect_more_red_3: -4405168486100483241
+      Effect_more_red_30: 2881500012030513871
+      Effect_more_red_31: -4060946733282246989
+      Effect_more_red_32: 3077972433620096344
+      Effect_more_red_33: 2753258091671712876
+      Effect_more_red_34: -8349560154352857021
+      Effect_more_red_35: -830911883200758596
+      Effect_more_red_36: -8479446316845642203
+      Effect_more_red_37: -3019337766029044287
+      Effect_more_red_38: -720634333523323434
+      Effect_more_red_39: -8179878482084325979
+      Effect_more_red_4: 8317483438680723192
+      Effect_more_red_40: -4874784172078937617
+      Effect_more_red_41: 9013898388909273656
+      Effect_more_red_42: -7319254474805859551
+      Effect_more_red_43: -7524271832905349948
+      Effect_more_red_44: 2264980649392033633
+      Effect_more_red_45: -4712980700681112932
+      Effect_more_red_46: 7375811617435645212
+      Effect_more_red_47: -3254456403380027109
+      Effect_more_red_48: -2699611427125084997
+      Effect_more_red_49: 8082967063003193975
+      Effect_more_red_5: -1804764683562134242
+      Effect_more_red_50: -729107803716890810
+      Effect_more_red_51: 6504915656351690096
+      Effect_more_red_52: 173020117774337523
+      Effect_more_red_53: 7964177204267393043
+      Effect_more_red_54: 3327921848091947266
+      Effect_more_red_55: -3184916841650140459
+      Effect_more_red_56: -1835898364914004102
+      Effect_more_red_57: -8060015890952165176
+      Effect_more_red_58: 4349557593506277430
+      Effect_more_red_59: 1167095812246756252
+      Effect_more_red_6: -624974868817913330
+      Effect_more_red_60: 6133467936872591032
+      Effect_more_red_61: 5602831398359638416
+      Effect_more_red_62: 4061189675484965255
+      Effect_more_red_63: 2899164367735145008
+      Effect_more_red_64: 9153827160781370049
+      Effect_more_red_65: -1437529647125905372
+      Effect_more_red_66: 5346469833014311284
+      Effect_more_red_67: 1099325613916401721
+      Effect_more_red_68: 211393570710715816
+      Effect_more_red_69: 7801716228810720635
+      Effect_more_red_7: 8102118560902587275
+      Effect_more_red_70: 4673236205317649327
+      Effect_more_red_8: 6225298997747497685
+      Effect_more_red_9: -8130760652230541009
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
