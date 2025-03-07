@@ -43087,11 +43087,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 314496501}
---- !u!82 &315814993 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6107596661450771957, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-  m_PrefabInstance: {fileID: 1363071680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322445428
 GameObject:
   m_ObjectHideFlags: 0
@@ -44812,45 +44807,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 770908969311465132, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: acJump
-      value: 
-      objectReference: {fileID: 8300000, guid: b9e1ef555687f7a4b97a1479f489d2b7, type: 3}
-    - target: {fileID: 770908969311465132, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: jumpPower
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 929850239491339726, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: acThrow
-      value: 
-      objectReference: {fileID: 8300000, guid: efee8b85821d0f246bf561abf61ca009, type: 3}
-    - target: {fileID: 929850239491339726, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: audioSourceSE
-      value: 
-      objectReference: {fileID: 315814993}
-    - target: {fileID: 1980454462316422418, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: acRun
-      value: 
-      objectReference: {fileID: 8300000, guid: a38aa11bdbee5d048bb1b3184db5c2a3, type: 3}
-    - target: {fileID: 1980454462316422418, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1980454462316422418, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: accelPower
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1980454462316422418, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: accelDuration
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3105702699671071934, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079533439694803727, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.69
       objectReference: {fileID: 0}
     - target: {fileID: 9029780248838342533, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44892,8 +44851,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2463032419834381338, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
