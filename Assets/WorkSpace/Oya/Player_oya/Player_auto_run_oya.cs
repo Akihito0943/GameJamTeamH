@@ -8,7 +8,7 @@ public class Player_auto_run_oya : MonoBehaviour
 
     [SerializeField, Header("加速力")] float accelPower = 5;           // 加速力
     [SerializeField, Header("減速力")] float brakePower = 0.5f;        // 減速力
-    [SerializeField, Header("加速継続時間")] float accelDuration = 2f; // 加速継続時間
+    [SerializeField, Header("加速継続時間")] float accelDuration = 0.5f; // 加速継続時間
 
     [SerializeField, Header("走る用のオーディオソース")] AudioSource audioSourceRun;
 
@@ -75,8 +75,10 @@ public class Player_auto_run_oya : MonoBehaviour
     private IEnumerator Accelerate(float accelMultiplier)
     {
         // 加速度分スピードを調整する
-        speed *= accelMultiplier;
-
+        if (speed == originalSpeed)
+        {
+            speed *= accelMultiplier;
+        }
         // 一定時間待つ
         yield return new WaitForSeconds(accelDuration);
 
