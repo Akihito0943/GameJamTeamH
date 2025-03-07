@@ -27,8 +27,8 @@ public class EnemyController_Yamashina : MonoBehaviour
     [SerializeField, Header("ジャンプの効果音")] AudioClip acJump;
     [SerializeField, Header("ヒットの効果音")] AudioClip acHIt;
 
-    [SerializeField, Header("フェードアウトを行いシーンを切替えるキャンバス")]
-    Canvas cvFadeOut;
+    [SerializeField, Header("フェードインを行いシーンを切替えるキャンバス")]
+    Canvas cvFadeIn;
 
     // 一時停止中のフラグ
     private bool isPaused = false;
@@ -168,7 +168,7 @@ public class EnemyController_Yamashina : MonoBehaviour
                 audioSourceSE.PlayOneShot(acHIt);
 
                 // シーンを切り替える
-                cvFadeOut.gameObject.SetActive(true);
+                cvFadeIn.gameObject.SetActive(true);
             }
         }
 

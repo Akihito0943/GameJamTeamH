@@ -242,6 +242,11 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 8566044954663190863, guid: b739314c6ca40dd409c82dbd2b331fcc, type: 3}
   m_PrefabInstance: {fileID: 5120849106346325119}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &697987309 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6107596661450771957, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+  m_PrefabInstance: {fileID: 1363071680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1839735485 &707311300 stripped
 Tilemap:
   m_CorrespondingSourceObject: {fileID: 503937561431080531, guid: 13486af8551a414469abdeb258876650, type: 3}
@@ -329,6 +334,10 @@ PrefabInstance:
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 707311300}
+    - target: {fileID: 1584791368073817225, guid: dcab049f3dac57946941bdaf1c8ee966, type: 3}
+      propertyPath: cvFadeIn
+      value: 
+      objectReference: {fileID: 535108347}
     - target: {fileID: 1584791368073817225, guid: dcab049f3dac57946941bdaf1c8ee966, type: 3}
       propertyPath: cvFadeOut
       value: 
@@ -468,6 +477,18 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f2c1d592e82c82847bb65f920fc5efcf, type: 2}
+    - target: {fileID: 7304434502818966913, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: acFall
+      value: 
+      objectReference: {fileID: 8300000, guid: c98e01de11fb5614fa54686061b04e23, type: 3}
+    - target: {fileID: 7304434502818966913, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: cvFadeIn
+      value: 
+      objectReference: {fileID: 535108347}
+    - target: {fileID: 7304434502818966913, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
+      propertyPath: audioSourceSE
+      value: 
+      objectReference: {fileID: 697987309}
     - target: {fileID: 9029780248838342533, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.92
