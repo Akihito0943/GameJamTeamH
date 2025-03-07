@@ -31,7 +31,7 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         int minutes = totalSeconds / 60;  // 分を計算
         int seconds = totalSeconds % 60;  // 余った秒を計算
         elapsedTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-        throwCountText.text = "";
+        throwCountText.text = GameManager_Yamashina.allCount.ToString();
         restartButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange_Restart());
         titleButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange());
 
