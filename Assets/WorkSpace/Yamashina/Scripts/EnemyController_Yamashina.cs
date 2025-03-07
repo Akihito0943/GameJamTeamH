@@ -70,17 +70,9 @@ public class EnemyController_Yamashina : MonoBehaviour
         // 現在位置のタイルを取得
         TileBase currentTile = tilemap.GetTile(tilePosition);
 
-        if (currentTile) { 
-            Debug.Log("タイルがある");
-            Debug.Log(currentTile.name);
-        }
-        else Debug.Log("タイルがない");
-
-
         // 現在位置が穴のタイルかどうか判定
         if (currentTile == holeTile && !jumpFlag)
         {
-            Debug.Log("ぶつかった");
             Jump();
         }
         if (IsAttacked && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f && !animator.IsInTransition(0))

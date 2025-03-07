@@ -22,7 +22,8 @@ public class Player_Aim : MonoBehaviour
     [SerializeField, Header("クールタイム中かどうか")]
     private bool isCoolTime = false;
 
-
+    float rotZ;
+    
     // Update is called once per frame
     void Update()
     {
@@ -32,7 +33,7 @@ public class Player_Aim : MonoBehaviour
 
         // マウスの方向を計算し160度の範囲に移動を制限する
         Vector3 rotation = mousePos - transform.position;
-        float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+        rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         rotZ = Mathf.Clamp(rotZ, -80, 80);
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
@@ -59,7 +60,12 @@ public class Player_Aim : MonoBehaviour
         Debug.Log(allCount);
 
         // 弾を生成する
-        Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+        GameObject goBullet = Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+        // 弾の速度と発射角度を設定
+        Rigidbody2D rbBullet = goBullet.GetComponent<Rigidbody2D>();
+        Bullet_Kumagae bk = goBullet.GetComponent<Bullet_Kumagae>();
+        Vector2 direction = new Vector2(Mathf.Cos(rotZ * Mathf.Deg2Rad), Mathf.Sin(rotZ * Mathf.Deg2Rad));
+        rbBullet.velocity = direction * bk.GetSpeed();
 
         // 投げるアニメーションを再生する
         animator.SetTrigger("Throw");
