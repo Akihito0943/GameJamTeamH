@@ -10,6 +10,12 @@ public class Player_auto_run_oya : MonoBehaviour
     [SerializeField, Header("減速力")] float brakePower = 0.5f;        // 減速力
     [SerializeField, Header("加速継続時間")] float accelDuration = 2f; // 加速継続時間
 
+    [SerializeField, Header("走る用のオーディオソース")] AudioSource audioSourceRun;
+
+    [SerializeField, Header("効果音用のオーディオソース")] AudioSource audioSourceSE;
+    [SerializeField, Header("障害物に当たった時の効果音")] AudioClip acObstacle;
+    [SerializeField, Header("アイテムに当たった時の効果音")] AudioClip acItem;
+
     // 元の速度を保持する変数
     private float originalSpeed;
 
@@ -17,6 +23,10 @@ public class Player_auto_run_oya : MonoBehaviour
     void Start()
     {
         originalSpeed = speed;
+
+        // 足音をループ再生する
+        audioSourceRun.Play();
+        audioSourceRun.loop = true;
     }
 
     // Update is called once per frame
@@ -30,12 +40,20 @@ public class Player_auto_run_oya : MonoBehaviour
         if (collision.gameObject.tag == "Obstacle")
         {
             ChangeSpeed(brakePower);
+            // 障害物に当たった時のアニメーションを再生する
+            GetComponent<Animator>().SetBool("IsObstacleHit", true);
+            // 足音を遅くする
+            audioSourceRun.pitch = 0.8f;
+            // 障害物に当たった時の効果音再生            
+            audioSourceSE.PlayOneShot(acObstacle);
         }
 
         // アイテムに当たったら移動速度増加させる
         if (collision.gameObject.tag == "Item")
         {
             ChangeSpeed(accelPower);
+            // 障害物に当たった時の効果音再生            
+            audioSourceSE.PlayOneShot(acItem);
         }
     }
 
@@ -64,5 +82,8 @@ public class Player_auto_run_oya : MonoBehaviour
 
         // 元の移動速度に戻す
         speed = originalSpeed;
+        GetComponent<Animator>().SetBool("IsObstacleHit", false);
+        // 足音を通常速度に戻す
+        audioSourceRun.pitch = 1.0f;
     }
 }

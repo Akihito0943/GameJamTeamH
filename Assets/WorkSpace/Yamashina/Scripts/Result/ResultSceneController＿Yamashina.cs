@@ -57,6 +57,7 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
     {
         SceneTransitionManager_Yamashina.instance.NextSceneButton(0);
         GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.None);
+        GameManager_Yamashina.ResetBulletCount();
 
 
     }
@@ -65,6 +66,8 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
     {
         SceneTransitionManager_Yamashina.instance.NextSceneButton(1);
         GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.None);
+        GameManager_Yamashina.ResetBulletCount();
+
 
     }
 }

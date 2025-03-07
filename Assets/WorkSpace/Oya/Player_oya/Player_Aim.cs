@@ -20,6 +20,10 @@ public class Player_Aim : MonoBehaviour
     [SerializeField, Header("クールタイム中かどうか")]
     private bool isCoolTime = false;
 
+    [SerializeField, Header("効果音用のオーディオソース")] AudioSource audioSourceSE;
+    [SerializeField, Header("投げた時の効果音")] AudioClip acThrow;
+
+
     float rotZ;
     
     // Update is called once per frame
@@ -43,6 +47,8 @@ public class Player_Aim : MonoBehaviour
             {
                 isCoolTime = true;
                 StartCoroutine(ThrowAfterCoolTimer());
+                // 効果音を再生
+                audioSourceSE.PlayOneShot(acThrow);
             }
         }
     }
@@ -55,7 +61,7 @@ public class Player_Aim : MonoBehaviour
     {
         //投げた回数をカウント
         GameManager_Yamashina.allCount++;
-
+        MultiAudio_Yamashina.ins.PlaySEByName("SE_Throw");
 
         // 弾を生成する
         GameObject goBullet = Instantiate(bullet, bulletTransform.position, Quaternion.identity);

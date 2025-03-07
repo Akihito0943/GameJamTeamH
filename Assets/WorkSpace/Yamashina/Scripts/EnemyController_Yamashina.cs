@@ -22,7 +22,11 @@ public class EnemyController_Yamashina : MonoBehaviour
     private float normalSpeed = 2f;
     private bool IsAttacked = false;
 
-  
+    [SerializeField, Header("走る用のオーディオソース")] AudioSource audioSourceRun;
+    [SerializeField, Header("効果音用のオーディオソース")] AudioSource audioSourceSE;
+    [SerializeField, Header("ジャンプの効果音")] AudioClip acJump;
+    [SerializeField, Header("ヒットの効果音")] AudioClip acHIt;
+
     // 一時停止中のフラグ
     private bool isPaused = false;
     private void Start()
@@ -48,12 +52,18 @@ public class EnemyController_Yamashina : MonoBehaviour
         // アニメーションを再開し、敵の動作を開始
         animator.enabled = true;
         enemyActionStarted = true;
+
+        // 足音をループ再生する
+        audioSourceRun.Play();
+        audioSourceRun.loop = true;
     }
     private void EnemyAction()
     {
         // 一時停止中は動かさない
         if (isPaused)
         {
+            // 足音をループ再生する
+            audioSourceRun.Stop();
             return;
         }
 
@@ -102,26 +112,36 @@ public class EnemyController_Yamashina : MonoBehaviour
             rigidBody2D_Enemy.AddForce(Vector2.up * enemyJumpPower, ForceMode2D.Impulse);
             jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
             animator.SetBool("jumpFlag", true);
-
+            // 足音を止める
+            audioSourceRun.Stop();
+            // ジャンプ音を再生
+            audioSourceSE.PlayOneShot(acJump);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))  // 地面に着地した場合
         {
             jumpFlag = true;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
 
             rigidBody2D_Enemy.constraints |= RigidbodyConstraints2D.FreezePositionY;
+            Debug.Log("着地した");
             animator.SetBool("jumpFlag", false);
+            // 足音を再び再生する
+            audioSourceRun.Play();
+            audioSourceRun.loop = true;
             jumpFlag = false;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
 
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            // ���݈ʒu�����̃^�C�����ǂ�������
+            // 障害物に当たった時の処理
             if (!jumpFlag)
-
             {
                 Debug.Log($"Collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
                 Jump();
@@ -130,9 +150,8 @@ public class EnemyController_Yamashina : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            // ���݈ʒu�����̃^�C�����ǂ�������
+            // 輪っかが当たった時の処理
             if (!IsAttacked)
-
             {
                 IsAttacked = true;
 
@@ -142,7 +161,8 @@ public class EnemyController_Yamashina : MonoBehaviour
                 isPaused = true;
                 SceneTransitionManager_Yamashina.instance.GoToNextScene(SceneTransitionManager_Yamashina.instance.sceneInformation.GetNextSceneInt());
 
-
+                // ヒット音を再生
+                audioSourceSE.PlayOneShot(acHIt);
             }
         }
 
