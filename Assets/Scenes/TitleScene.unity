@@ -1708,6 +1708,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 282175234}
     m_Modifications:
+    - target: {fileID: 263785324711162572, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 263785324711162572, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 962073917866771451, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1739,6 +1747,14 @@ PrefabInstance:
     - target: {fileID: 962073917866771451, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416218460710634946, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416218460710634946, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 1539741510769026456, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1792,6 +1808,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3206806306158467878, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206806306158467878, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432464846557217138, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4075857757755897127, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -1819,6 +1847,10 @@ PrefabInstance:
     - target: {fileID: 4075857757755897127, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809671313654090000, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5246154625425815369, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_Pivot.x
@@ -1900,6 +1932,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5805529609759557592, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805529609759557592, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 5957857477835795512, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_SizeDelta.x
       value: -1029.072
@@ -1916,6 +1956,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 272.6
       objectReference: {fileID: 0}
+    - target: {fileID: 6835921131408012570, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835921131408012570, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8341547464666756008, guid: 7da48c921e909134b9968b9c4196e806, type: 3}
     - target: {fileID: 7519218473504770627, guid: 3116386f97630c54c94a6f595d1055e1, type: 3}
       propertyPath: m_Name
       value: MainPanel
