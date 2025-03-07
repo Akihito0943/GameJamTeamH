@@ -23,6 +23,7 @@ public class Player_auto_run_oya : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
+        MultiAudio_Yamashina.ins.PlaySEByName("SE_Running");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
