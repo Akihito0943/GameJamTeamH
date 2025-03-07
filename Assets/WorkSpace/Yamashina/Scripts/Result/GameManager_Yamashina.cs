@@ -48,8 +48,13 @@ public class GameManager_Yamashina : MonoBehaviour
     }
     private void Start()
     {
-        allCount = 0;
+        ResetBulletCount();
     }
+    public static void ResetBulletCount()
+    {
+        allCount = 0;   
+    }
+
 }
 
 
