@@ -34,6 +34,8 @@ public class Player_auto_run_oya : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
+
         transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)

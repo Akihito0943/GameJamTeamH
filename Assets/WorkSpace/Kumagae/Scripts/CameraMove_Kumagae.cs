@@ -32,6 +32,8 @@ public class CameraMove_Kumagae : MonoBehaviour
     {
         if (trPlayer == null) return;
 
+        if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
+
         // プレイヤーの幅（半分のサイズ）を取得
         float playerWidth = srPlayer.bounds.extents.x;
 

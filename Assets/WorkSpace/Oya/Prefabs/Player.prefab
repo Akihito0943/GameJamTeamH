@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  accelPower: 2.5
+  accelPower: 1.5
   brakePower: 0.5
   accelDuration: 2
   audioSourceRun: {fileID: 2720020973958677898}

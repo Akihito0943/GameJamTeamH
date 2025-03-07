@@ -44,6 +44,8 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     protected virtual void Update()
     {
+        if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
+
         if (enemyActionStarted)
         {
             EnemyAction();
