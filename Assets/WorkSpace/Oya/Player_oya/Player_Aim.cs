@@ -13,8 +13,6 @@ public class Player_Aim : MonoBehaviour
     [SerializeField, Header("プレイヤーのアニメーター")]
     Animator animator;
 
-    [SerializeField, Header("輪っかを投げた回数")]
-    static float allCount = 0;
 
     [SerializeField, Header("クールタイム")]
     float coolTime = 2;
@@ -56,8 +54,8 @@ public class Player_Aim : MonoBehaviour
     private void Throw()
     {
         //投げた回数をカウント
-        allCount++;
-        Debug.Log(allCount);
+        GameManager_Yamashina.allCount++;
+
 
         // 弾を生成する
         GameObject goBullet = Instantiate(bullet, bulletTransform.position, Quaternion.identity);
