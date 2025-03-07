@@ -609,8 +609,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 692394761462264836, guid: dcab049f3dac57946941bdaf1c8ee966, type: 3}
-      propertyPath: m_Name
-      value: CameraPiP
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1584791368073817225, guid: dcab049f3dac57946941bdaf1c8ee966, type: 3}
       propertyPath: tilemap
@@ -735,10 +735,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1980454462316422418, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3105702699671071934, guid: bf38b5ab7bf3d6d428518c35201549cb, type: 3}
       propertyPath: m_Name
       value: Player
