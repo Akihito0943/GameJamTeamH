@@ -30,7 +30,7 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         int totalSeconds = Mathf.FloorToInt(Time.time); // 経過秒数を整数化
         int minutes = totalSeconds / 60;  // 分を計算
         int seconds = totalSeconds % 60;  // 余った秒を計算
-        elapsedTimeText.text = "経過時間："+string.Format("{0:00}:{1:00}", minutes, seconds);
+        elapsedTimeText.text = "経過時間："+string.Format("{0 : 00}:{1 : 00}", minutes, seconds);
         throwCountText.text = "投げた回数： "+GameManager_Yamashina.allCount.ToString() +"回";
         restartButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange_Restart());
         titleButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange());
