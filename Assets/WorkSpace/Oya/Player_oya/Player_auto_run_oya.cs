@@ -17,6 +17,9 @@ public class Player_auto_run_oya : MonoBehaviour
     [SerializeField, Header("障害物に当たった時の効果音")] AudioClip acObstacle;
     [SerializeField, Header("アイテムに当たった時の効果音")] AudioClip acItem;
 
+    [SerializeField, Header("アイテム取得時のエフェクト")]
+    GameObject goFlashEffect;
+
 
     // 煙エフェクトをコントロールする
     private SmokeVFX_Kumagae smoke;
@@ -34,7 +37,7 @@ public class Player_auto_run_oya : MonoBehaviour
 
         // コンポーネント取得
         smoke = GetComponent<SmokeVFX_Kumagae>();
-        originalSmokeScale = new Vector3(0.35f, 0.35f, 0.35f);
+        originalSmokeScale = new Vector3(0.6f,0.6f,0.6f);
         
         // 足音をループ再生する
         audioSourceRun.Play();
@@ -61,7 +64,7 @@ public class Player_auto_run_oya : MonoBehaviour
             // 障害物に当たった時の効果音再生            
             audioSourceSE.PlayOneShot(acObstacle);
             // 煙エフェクトを小さくする
-            smoke.SetSmokeScale(new Vector3(0.2f, 0.2f, 0.2f));
+            smoke.SetSmokeScale(new Vector3(0.35f, 0.35f, 0.35f));
         }
 
         // アイテムに当たったら移動速度増加させる
@@ -70,6 +73,10 @@ public class Player_auto_run_oya : MonoBehaviour
              ChangeSpeed(accelPower);
             // アイテムに当たった時の効果音再生            
             audioSourceSE.PlayOneShot(acItem);
+            // 取得時のエフェクトを出す
+            var g = Instantiate(goFlashEffect, collision.gameObject.transform.position, Quaternion.identity);
+            Destroy(g, 1.0f);
+            Destroy(collision.gameObject);
         }
     }
 
