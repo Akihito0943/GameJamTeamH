@@ -80,9 +80,6 @@ public class EnemyController_Yamashina : MonoBehaviour
         // 現在位置のタイルを取得
         TileBase currentTile = tilemap.GetTile(tilePosition);
 
-        if (currentTile) { Debug.Log("タイルあり"); }
-        else Debug.Log("タイルなし");
-
         // 現在位置が穴のタイルかどうか判定
         if (currentTile == holeTile && !jumpFlag)
         {
@@ -103,7 +100,7 @@ public class EnemyController_Yamashina : MonoBehaviour
         {
             GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.Escaped);
 
-            SceneTransitionManager_Yamashina.instance.GoToNextScene(SceneTransitionManager_Yamashina.instance.sceneInformation.GetNextSceneInt());
+            //SceneTransitionManager_Yamashina.instance.GoToNextScene(SceneTransitionManager_Yamashina.instance.sceneInformation.GetNextSceneInt());
         }
     }
 
