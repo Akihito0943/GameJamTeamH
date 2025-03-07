@@ -55,7 +55,7 @@ public class Player_Aim : MonoBehaviour
     {
         //“Š‚°‚½‰ñ”‚ğƒJƒEƒ“ƒg
         GameManager_Yamashina.allCount++;
-
+        MultiAudio_Yamashina.ins.PlaySEByName("SE_Throw");
 
         // ’e‚ğ¶¬‚·‚é
         GameObject goBullet = Instantiate(bullet, bulletTransform.position, Quaternion.identity);

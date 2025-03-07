@@ -28,6 +28,8 @@ public class Player_jump : MonoBehaviour
         {
             // ジャンプ力を適用
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpPower);
+            MultiAudio_Yamashina.ins.PlaySEByName("SE_Jump");
+
         }
     }
 
