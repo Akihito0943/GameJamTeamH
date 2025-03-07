@@ -57,7 +57,7 @@ Transform:
   m_GameObject: {fileID: 1617086708252010655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.69, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -82,8 +82,8 @@ MonoBehaviour:
   animator: {fileID: 4780148098357540639}
   coolTime: 2
   isCoolTime: 0
-  audioSourceSE: {fileID: 0}
-  acThrow: {fileID: 0}
+  audioSourceSE: {fileID: 6107596661450771957}
+  acThrow: {fileID: 8300000, guid: efee8b85821d0f246bf561abf61ca009, type: 3}
 --- !u!1 &3105702699671071934
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 4780148098357540639}
   - component: {fileID: 1980454462316422418}
   - component: {fileID: 770908969311465132}
+  - component: {fileID: 7304434502818966913}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -116,8 +117,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.95, y: -2.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4079533439694803727}
   - {fileID: 5340459929761890742}
@@ -193,7 +194,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -239,7 +240,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.095547676, y: 0.036803663}
+  m_Offset: {x: 0.03699088, y: -0.014433026}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -249,7 +250,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.1287642, y: 2.261321}
+  m_Size: {x: 1.865262, y: 2.0124571}
   m_EdgeRadius: 0
 --- !u!95 &4780148098357540639
 Animator:
@@ -285,8 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092c4e6b694fdbb4e8e88ad517939b39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  accelPower: 5
+  speed: 2
+  accelPower: 2.5
   brakePower: 0.5
   accelDuration: 2
   audioSourceRun: {fileID: 2720020973958677898}
@@ -310,6 +311,18 @@ MonoBehaviour:
   acJump: {fileID: 8300000, guid: b9e1ef555687f7a4b97a1479f489d2b7, type: 3}
   audioSourceSE: {fileID: 6107596661450771957}
   audioSourceRun: {fileID: 2720020973958677898}
+--- !u!114 &7304434502818966913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105702699671071934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5fefefa1e8e66429bbf2019ae20e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5706189641670962076
 GameObject:
   m_ObjectHideFlags: 0
