@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ResultSceneController＿Yamashina : MonoBehaviour
 {
     [SerializeField, Header("リザルトイメージを表示させる場所")] private Image resultImage;
+    [SerializeField, Header("リザルトイメージを表示させる場所")] private Image resultImage_Win;
+
     [SerializeField, Header("リザルトの文字のイメージを表示させる場所")] private Image resultTextImage;
 
     [SerializeField, Header("ゲームリスタートボタン")] private Button restartButton;
@@ -39,11 +41,14 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         switch (GameManager_Yamashina.GetState())
         {
             case GameManager_Yamashina.EnemyState.Defeated:
-                resultImage.sprite = VictoriousSprite;
+                resultImage_Win.sprite = VictoriousSprite;  
+                resultImage.gameObject.SetActive(false);
                 resultTextImage.sprite = VictoriousTextSprite;
 
                 break;
             case GameManager_Yamashina.EnemyState.Escaped:
+                resultImage_Win.gameObject.SetActive(false);
+
                 resultImage.sprite = defeatedSprite;
                 resultTextImage.sprite = defeatedTextSprite;
                 break;
