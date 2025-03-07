@@ -30,6 +30,8 @@ public class Player_auto_run_oya : MonoBehaviour
         if (collision.gameObject.tag == "Obstacle")
         {
             ChangeSpeed(brakePower);
+            // 障害物に当たった時のアニメーションを再生する
+            GetComponent<Animator>().SetBool("IsObstacleHit", true);
         }
 
         // アイテムに当たったら移動速度増加させる
@@ -64,5 +66,6 @@ public class Player_auto_run_oya : MonoBehaviour
 
         // 元の移動速度に戻す
         speed = originalSpeed;
+        GetComponent<Animator>().SetBool("IsObstacleHit", false);
     }
 }
