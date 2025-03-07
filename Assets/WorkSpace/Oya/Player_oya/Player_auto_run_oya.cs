@@ -10,6 +10,7 @@ public class Player_auto_run_oya : MonoBehaviour
     [SerializeField, Header("減速力")] float brakePower = 0.5f;        // 減速力
     [SerializeField, Header("加速継続時間")] float accelDuration = 0.5f; // 加速継続時間
 
+
     [SerializeField, Header("走る用のオーディオソース")] AudioSource audioSourceRun;
 
     [SerializeField, Header("効果音用のオーディオソース")] AudioSource audioSourceSE;
@@ -23,6 +24,7 @@ public class Player_auto_run_oya : MonoBehaviour
     void Start()
     {
         originalSpeed = speed;
+
 
         // 足音をループ再生する
         audioSourceRun.Play();
