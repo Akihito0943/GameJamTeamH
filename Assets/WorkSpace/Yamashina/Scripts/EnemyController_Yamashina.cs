@@ -75,10 +75,15 @@ public class EnemyController_Yamashina : MonoBehaviour
 
         // エネミーの位置をタイルマップの座標に変換
         Vector3Int tilePosition = tilemap.WorldToCell(transform.position);
-        tilePosition.y = tilePosition.y - 1;
+        tilePosition.y = -6;
 
         // 現在位置のタイルを取得
         TileBase currentTile = tilemap.GetTile(tilePosition);
+
+        Debug.Log(tilePosition);
+
+        if (currentTile) { Debug.Log("タイルあり"); }
+        else Debug.Log("タイルなし");
 
         // 現在位置が穴のタイルかどうか判定
         if (currentTile == holeTile && !jumpFlag)
