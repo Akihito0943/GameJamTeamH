@@ -154,7 +154,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI_Game_Chase_0: -2197585276481879407
+      UI_Game_Chase_1: -6112331105049312077
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
