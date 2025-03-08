@@ -18,6 +18,12 @@ public class CutSceneManager_Kumagae : MonoBehaviour
     [SerializeField, Header("敵のプレハブ")]
     GameObject enemy;
 
+    [SerializeField, Header("ゲームオーバーのアニメションクリップ")]
+    AnimationClip acGameOver;
+
+    [SerializeField, Header("フェードインを行いシーンを切替えるキャンバス")]
+    Canvas cvFadeIn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,5 +52,21 @@ public class CutSceneManager_Kumagae : MonoBehaviour
     {
         player.SetActive(true);
         enemy.SetActive(true);
+    }
+
+    /// <summary>
+    /// ゲームオーバー時のカットシーンを作成する
+    /// </summary>
+    public void StartCutSceneOfEnd()
+    {
+        isCutSceneEnd = false;
+        animator.enabled = true;
+        animator.Play(acGameOver.name);
+    }
+
+    public void FadeInStart()
+    {
+        // シーンを切り替える
+        cvFadeIn.gameObject.SetActive(true);
     }
 }
