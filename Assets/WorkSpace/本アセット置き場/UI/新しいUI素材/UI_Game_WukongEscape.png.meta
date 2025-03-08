@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6c173e5cfa7f7ea4ba91e1cf0058488d
+guid: bedf872efedc54545b322c9535ac2500
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5720806106795589804
-    second: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0"
+      213: -7372993518558231957
+    second: UI_Game_WukongEscape_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0"
+      name: UI_Game_WukongEscape_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 61
+        y: 5
+        width: 1456
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45f309fe72d9b90b0800000000000000
-      internalID: -5720806106795589804
+      spriteID: b62441b657ddda990800000000000000
+      internalID: -7372993518558231957
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0": -5720806106795589804
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

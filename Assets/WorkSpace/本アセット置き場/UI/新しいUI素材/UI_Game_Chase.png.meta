@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 6c173e5cfa7f7ea4ba91e1cf0058488d
+guid: 2e688270cee3ff446abfc3aeb97cabe3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5720806106795589804
-    second: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0"
+      213: -2197585276481879407
+    second: UI_Game_Chase_0
+  - first:
+      213: -6112331105049312077
+    second: UI_Game_Chase_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0"
+      name: UI_Game_Chase_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 73
+        y: 7
+        width: 1289
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +117,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45f309fe72d9b90b0800000000000000
-      internalID: -5720806106795589804
+      spriteID: 1924ba795db9081e0800000000000000
+      internalID: -2197585276481879407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_Chase_1
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 6
+        width: 107
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b407f59e33ac2ba0800000000000000
+      internalID: -6112331105049312077
       vertices: []
       indices: 
       edges: []
@@ -130,8 +154,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0": -5720806106795589804
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
