@@ -22,6 +22,8 @@ public class Player_auto_run_oya : MonoBehaviour
     [SerializeField, Header("アイテム取得時のエフェクト")]
     GameObject goFlashEffect;
 
+    [SerializeField, Header("敵オブジェクト")]
+    GameObject goEnemy;
 
     // 煙エフェクトをコントロールする
     private SmokeVFX_Kumagae smoke;
@@ -56,6 +58,11 @@ void Start()
         if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
 
         transform.Translate(Vector3.right * speed * Time.deltaTime);
+
+        if(transform.position.x >= goEnemy.transform.position.x - 1.0f)
+        {
+            transform.position = new Vector3(transform.position.x - 1.0f, transform.position.y, transform.position.z);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
