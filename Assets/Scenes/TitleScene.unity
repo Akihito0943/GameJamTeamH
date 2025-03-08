@@ -1017,6 +1017,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8503254848788667140, guid: c3a4804543c158e49b08dbdd70e5c5b9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 332075760}
+    - target: {fileID: 8503254848788667140, guid: c3a4804543c158e49b08dbdd70e5c5b9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1512,7 +1520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0.000028133, y: 1.25}
+  m_AnchoredPosition: {x: 0.000030517578, y: 1.25}
   m_SizeDelta: {x: -0.0001, y: 12.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269234203
