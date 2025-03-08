@@ -13,14 +13,16 @@ public class Player_Aim : MonoBehaviour
     [SerializeField, Header("プレイヤーのアニメーター")]
     Animator animator;
 
-    [SerializeField, Header("輪っかを投げた回数")]
-    static float allCount = 0;
 
     [SerializeField, Header("クールタイム")]
     float coolTime = 2;
 
     [SerializeField, Header("クールタイム中かどうか")]
     private bool isCoolTime = false;
+
+    [SerializeField, Header("効果音用のオーディオソース")] AudioSource audioSourceSE;
+    [SerializeField, Header("投げた時の効果音")] AudioClip acThrow;
+
 
     float rotZ;
     
@@ -45,6 +47,8 @@ public class Player_Aim : MonoBehaviour
             {
                 isCoolTime = true;
                 StartCoroutine(ThrowAfterCoolTimer());
+                // 効果音を再生
+                audioSourceSE.PlayOneShot(acThrow);
             }
         }
     }
@@ -56,8 +60,8 @@ public class Player_Aim : MonoBehaviour
     private void Throw()
     {
         //投げた回数をカウント
-        allCount++;
-        Debug.Log(allCount);
+        GameManager_Yamashina.allCount++;
+        MultiAudio_Yamashina.ins.PlaySEByName("SE_Throw");
 
         // 弾を生成する
         GameObject goBullet = Instantiate(bullet, bulletTransform.position, Quaternion.identity);

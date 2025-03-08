@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ResultSceneController＿Yamashina : MonoBehaviour
 {
     [SerializeField, Header("リザルトイメージを表示させる場所")] private Image resultImage;
+    [SerializeField, Header("リザルトイメージを表示させる場所")] private Image resultImage_Win;
+
     [SerializeField, Header("リザルトの文字のイメージを表示させる場所")] private Image resultTextImage;
 
     [SerializeField, Header("ゲームリスタートボタン")] private Button restartButton;
@@ -30,8 +32,8 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         int totalSeconds = Mathf.FloorToInt(Time.time); // 経過秒数を整数化
         int minutes = totalSeconds / 60;  // 分を計算
         int seconds = totalSeconds % 60;  // 余った秒を計算
-        elapsedTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-        throwCountText.text = "";
+        elapsedTimeText.text = "経過時間："+string.Format("{0 : 00}:{1 : 00}", minutes, seconds);
+        throwCountText.text = "投げた回数： "+GameManager_Yamashina.allCount.ToString() +"回";
         restartButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange_Restart());
         titleButton.onClick.AddListener(() => DestroyGameManager_WithSceneChange());
 
@@ -39,11 +41,15 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         switch (GameManager_Yamashina.GetState())
         {
             case GameManager_Yamashina.EnemyState.Defeated:
-                resultImage.sprite = VictoriousSprite;
+                resultImage.gameObject.SetActive(false);
+
+                resultImage_Win.sprite = VictoriousSprite;  
                 resultTextImage.sprite = VictoriousTextSprite;
 
                 break;
             case GameManager_Yamashina.EnemyState.Escaped:
+                resultImage_Win.gameObject.SetActive(false);
+
                 resultImage.sprite = defeatedSprite;
                 resultTextImage.sprite = defeatedTextSprite;
                 break;
@@ -57,6 +63,7 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
     {
         SceneTransitionManager_Yamashina.instance.NextSceneButton(0);
         GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.None);
+        GameManager_Yamashina.ResetBulletCount();
 
 
     }
@@ -65,6 +72,8 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
     {
         SceneTransitionManager_Yamashina.instance.NextSceneButton(1);
         GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.None);
+        GameManager_Yamashina.ResetBulletCount();
+
 
     }
 }

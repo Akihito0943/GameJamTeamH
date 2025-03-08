@@ -14,9 +14,11 @@ public class GameManager_Yamashina : MonoBehaviour
         Escaped     // “¦‚°Ø‚Á‚½
     }
 
+   
     static EnemyState enemyState = EnemyState.None;
     static EnemyState previousGameState_Enemy;
-
+    [Header("ƒvƒŒƒCƒ„[‚ª—Ö‚Á‚©‚ğ“Š‚°‚½‰ñ”")]
+    public static float allCount = 0;
 
     public static void ChangeState(EnemyState newState)
     {
@@ -44,6 +46,15 @@ public class GameManager_Yamashina : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void Start()
+    {
+        ResetBulletCount();
+    }
+    public static void ResetBulletCount()
+    {
+        allCount = 0;   
+    }
+
 }
 
 

@@ -13,6 +13,11 @@ public class CameraMove_Kumagae : MonoBehaviour
     [Header("画面の左端からのオフセット")]
     [SerializeField] float offset;
 
+
+    public float smoothTime = 0.2f; // スムーズな移動時間
+
+    private Vector3 velocity = Vector3.zero;
+
     // 画面の左端
     private Vector3 screenLeftEdge;
 
@@ -32,14 +37,17 @@ public class CameraMove_Kumagae : MonoBehaviour
     {
         if (trPlayer == null) return;
 
+        if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
+
         // プレイヤーの幅（半分のサイズ）を取得
         float playerWidth = srPlayer.bounds.extents.x;
 
         // 新しいカメラの座標を設定
-        float newCameraPosX = trPlayer.position.x - (screenLeftEdge.x + playerWidth + offset);
+        float targetPosX = trPlayer.position.x - (screenLeftEdge.x + playerWidth + offset);
 
-        // カメラの座標を更新
-        transform.position = new Vector3(newCameraPosX, transform.position.y, transform.position.z);
+        // SmoothDamp で慣性を持たせて追従
+        float smoothedX = Mathf.SmoothDamp(transform.position.x, targetPosX, ref velocity.x, smoothTime);
+        transform.position = new Vector3(smoothedX, transform.position.y, transform.position.z);
     }
 
     /// <summary>

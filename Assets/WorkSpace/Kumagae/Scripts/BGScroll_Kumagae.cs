@@ -25,6 +25,8 @@ public class BGScroll_Kumagae : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
+
         // ƒJƒƒ‰‚ÌˆÚ“®‘¬“x‚ğŒvZ‚·‚é
         Vector2 cameraMoveSpeed = Camera.main.transform.position - lastCameraPos;
 
