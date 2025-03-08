@@ -8,6 +8,10 @@ TagManager:
   - Ground
   - Item
   - Bullet
+  - FxTemporaire
+  - BGM
+  - SE
+  - End
   layers:
   - Default
   - TransparentFX
