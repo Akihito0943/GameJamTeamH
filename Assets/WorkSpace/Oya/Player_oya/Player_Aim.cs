@@ -25,7 +25,13 @@ public class Player_Aim : MonoBehaviour
 
 
     float rotZ;
-    
+
+    private void Start()
+    {
+        audioSourceSE.volume = MultiAudio_Yamashina.ins.seSource.volume;
+
+    }
+
     // Update is called once per frame
     void Update()
     {

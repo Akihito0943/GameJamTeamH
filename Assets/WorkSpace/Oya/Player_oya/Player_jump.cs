@@ -23,6 +23,8 @@ public class Player_jump : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        audioSourceRun.volume = MultiAudio_Yamashina.ins.seSource.volume;
+        audioSourceSE.volume = MultiAudio_Yamashina.ins.seSource.volume;
     }
 
     // Update is called once per frame

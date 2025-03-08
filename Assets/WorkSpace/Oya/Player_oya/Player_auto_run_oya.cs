@@ -46,7 +46,8 @@ void Start()
         // コンポーネント取得
         smoke = GetComponent<SmokeVFX_Kumagae>();
         originalSmokeScale = new Vector3(0.6f,0.6f,0.6f);
-        
+        audioSourceRun.volume = MultiAudio_Yamashina.ins.seSource.volume;
+        audioSourceSE.volume = MultiAudio_Yamashina.ins.seSource.volume;
         // 足音をループ再生する
         audioSourceRun.Play();
         audioSourceRun.loop = true;

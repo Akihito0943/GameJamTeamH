@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: 41867421adc4124499007f64979c38de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9130297050811147841
+    second: UI_Game_HowToPlay_0
+  - first:
+      213: 2281005894349121902
+    second: UI_Game_HowToPlay_1
+  - first:
+      213: -2380094661148691733
+    second: UI_Game_HowToPlay_2
+  - first:
+      213: 7271805683032238908
+    second: UI_Game_HowToPlay_3
+  - first:
+      213: -4680650440932531849
+    second: UI_Game_HowToPlay_4
+  - first:
+      213: -5852518512777066091
+    second: UI_Game_HowToPlay_5
+  - first:
+      213: -3815553935288141975
+    second: UI_Game_HowToPlay_6
+  - first:
+      213: 9159743852751786051
+    second: UI_Game_HowToPlay_7
+  - first:
+      213: -8168654194284787025
+    second: UI_Game_HowToPlay_8
+  - first:
+      213: 8196187157433490286
+    second: UI_Game_HowToPlay_9
+  - first:
+      213: -5688804693418140563
+    second: UI_Game_HowToPlay_10
+  - first:
+      213: -2351758242230174089
+    second: UI_Game_HowToPlay_11
+  - first:
+      213: -6155399473599728066
+    second: UI_Game_HowToPlay_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 87
+        width: 121
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14625671bc455be70800000000000000
+      internalID: 9130297050811147841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 56
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69604f86c2c7af10800000000000000
+      internalID: 2281005894349121902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 121
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2bd66148438fed0800000000000000
+      internalID: -2380094661148691733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_3
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 71
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3badc4bdb4aae460800000000000000
+      internalID: 7271805683032238908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 26
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771e07e193dfa0fb0800000000000000
+      internalID: -4680650440932531849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 17
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599868cab6da7cea0800000000000000
+      internalID: -5852518512777066091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 16
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9677ec959ed6c0bc0800000000000000
+      internalID: -3815553935288141975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 30
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34096d0f082fd1f70800000000000000
+      internalID: 9159743852751786051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 18
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa86a82a4c13ae80800000000000000
+      internalID: -8168654194284787025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 17
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b117f5bc4beb170800000000000000
+      internalID: 8196187157433490286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 16
+        width: 54
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c9c3c954e4d01b0800000000000000
+      internalID: -5688804693418140563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 17
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ef54eb650ec5fd0800000000000000
+      internalID: -2351758242230174089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Game_HowToPlay_12
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 15
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36367d9ac0a39aa0800000000000000
+      internalID: -6155399473599728066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UI_Game_HowToPlay_0: 9130297050811147841
+      UI_Game_HowToPlay_1: 2281005894349121902
+      UI_Game_HowToPlay_10: -5688804693418140563
+      UI_Game_HowToPlay_11: -2351758242230174089
+      UI_Game_HowToPlay_12: -6155399473599728066
+      UI_Game_HowToPlay_2: -2380094661148691733
+      UI_Game_HowToPlay_3: 7271805683032238908
+      UI_Game_HowToPlay_4: -4680650440932531849
+      UI_Game_HowToPlay_5: -5852518512777066091
+      UI_Game_HowToPlay_6: -3815553935288141975
+      UI_Game_HowToPlay_7: 9159743852751786051
+      UI_Game_HowToPlay_8: -8168654194284787025
+      UI_Game_HowToPlay_9: 8196187157433490286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
