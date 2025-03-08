@@ -14,6 +14,13 @@ public class PlayerFallOut_Kumagae : MonoBehaviour
 
     private bool isOneShot = false;
 
+
+
+    private void Start()
+    {
+        audioSourceSE.volume = MultiAudio_Yamashina.ins.seSource.volume;
+    }
+
     void Update()
     {
         // Y座標が-15以下になったらゲーム終了

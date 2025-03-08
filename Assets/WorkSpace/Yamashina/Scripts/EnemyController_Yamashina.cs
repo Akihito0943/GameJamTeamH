@@ -33,6 +33,10 @@ public class EnemyController_Yamashina : MonoBehaviour
     [SerializeField, Header("フェードインを行いシーンを切替えるキャンバス")]
     Canvas cvFadeIn;
 
+
+    [SerializeField, Header("吹き出し")]
+    GameObject goHukidashi;
+
     // 一時停止中のフラグ
     private bool isPaused = false;
     private void Start()
@@ -47,7 +51,18 @@ public class EnemyController_Yamashina : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
+        //if (!CutSceneManager_Kumagae.isCutSceneEnd) return;
+
+        // 吹き出しの出し入れ
+        if (!GetComponent<SpriteRenderer>().isVisible)
+        {
+            goHukidashi.SetActive(true);
+        }
+        else
+        {
+            goHukidashi.SetActive(false);
+        }
+
 
         if (enemyActionStarted)
         {

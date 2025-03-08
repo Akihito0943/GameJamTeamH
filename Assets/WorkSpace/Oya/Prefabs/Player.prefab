@@ -107,7 +107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9029780248838342533
 Transform:
   m_ObjectHideFlags: 0
@@ -125,6 +125,7 @@ Transform:
   - {fileID: 5340459929761890742}
   - {fileID: 7259536688892080271}
   - {fileID: 3957536031997441113}
+  - {fileID: 5647797999853944550}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &380535772758743822
@@ -292,11 +293,13 @@ MonoBehaviour:
   accelPower: 1.5
   brakePower: 0.5
   accelDuration: 2
+  minSpeed: 0
   audioSourceRun: {fileID: 2720020973958677898}
   audioSourceSE: {fileID: 6107596661450771957}
   acObstacle: {fileID: 8300000, guid: 32740bfb3a014494f9f1eb93864386ca, type: 3}
   acItem: {fileID: 8300000, guid: 66cc048f270c6ca4ea1e7b7f01bf5ae9, type: 3}
   goFlashEffect: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
+  goEnemy: {fileID: 0}
 --- !u!114 &770908969311465132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9fc51285e118b49a924197894ebad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGround: 1
   jumpPower: 10
   animator: {fileID: 4780148098357540639}
   acJump: {fileID: 8300000, guid: b9e1ef555687f7a4b97a1479f489d2b7, type: 3}
@@ -343,6 +347,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSmoke: {fileID: 3957536031997405305}
+--- !u!1 &5494194501426767044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5647797999853944550}
+  - component: {fileID: 4511457006124334445}
+  - component: {fileID: 5460972178946605394}
+  m_Layer: 0
+  m_Name: JumpCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5647797999853944550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5494194501426767044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9029780248838342533}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &4511457006124334445
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5494194501426767044}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.17812234, y: -1.1311021}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.6437553, y: 0.16287434}
+  m_EdgeRadius: 0
+--- !u!114 &5460972178946605394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5494194501426767044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f7332af442bf1479933c8ceb16cd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acJump: {fileID: 8300000, guid: b9e1ef555687f7a4b97a1479f489d2b7, type: 3}
+  audioSourceSE: {fileID: 6107596661450771957}
+  audioSourceRun: {fileID: 2720020973958677898}
+  goSmoke: {fileID: 3957536031997405305}
+  animator: {fileID: 4780148098357540639}
+  player: {fileID: 3105702699671071934}
 --- !u!1 &5706189641670962076
 GameObject:
   m_ObjectHideFlags: 0
