@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 211675623246703997}
-  - component: {fileID: 567879619752327670}
+  - component: {fileID: 2685024676906238912}
   m_Layer: 0
   m_Name: OptionManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &567879619752327670
+--- !u!114 &2685024676906238912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,14 +41,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2292458524092562288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47ee305e0200dd94ab810dc341d59271, type: 3}
+  m_Script: {fileID: 11500000, guid: fbb8373018e51a14487008f036bb4d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 887ea55bfa346ea44a967272b02d32fb, type: 2}
+  audioMixer: {fileID: 24100000, guid: f69f91091161b664ab1abc8e8815769c, type: 2}
   BGMSlider: {fileID: 0}
   SESlider: {fileID: 0}
-  UIVolumeSlider: {fileID: 0}
   initialAudioSettings:
-    BGMVolume: 0.3
+    BGMVolume: 0.5
     SEVolume: 0.5
-    UIVolume: 0.5
