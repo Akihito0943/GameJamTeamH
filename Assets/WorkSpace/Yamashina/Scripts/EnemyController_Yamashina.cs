@@ -27,6 +27,9 @@ public class EnemyController_Yamashina : MonoBehaviour
     [SerializeField, Header("ジャンプの効果音")] AudioClip acJump;
     [SerializeField, Header("ヒットの効果音")] AudioClip acHIt;
 
+    [SerializeField, Header("カットシーンのオブジェクト")]
+    GameObject goCutScene;
+
     [SerializeField, Header("フェードインを行いシーンを切替えるキャンバス")]
     Canvas cvFadeIn;
 
@@ -135,8 +138,15 @@ public class EnemyController_Yamashina : MonoBehaviour
             audioSourceRun.Play();
             audioSourceRun.loop = true;
             jumpFlag = false;  // ジャンプ後はフラグを立ててジャンプを1回だけにする
-
         }
+
+        // エンドtagオブジェクトに当たると敵を非アクティブにし、カットシーン用の画像でアニメションを行う
+        if (collision.gameObject.CompareTag("End"))
+        {
+            gameObject.SetActive(false);
+            goCutScene.GetComponent<CutSceneManager_Kumagae>().StartCutSceneOfEnd();
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -162,7 +172,6 @@ public class EnemyController_Yamashina : MonoBehaviour
                 GameManager_Yamashina.ChangeState(GameManager_Yamashina.EnemyState.Defeated);
 
                 isPaused = true;
-                // SceneTransitionManager_Yamashina.instance.GoToNextScene(SceneTransitionManager_Yamashina.instance.sceneInformation.GetNextSceneInt());
 
                 // ヒット音を再生
                 audioSourceSE.PlayOneShot(acHIt);
@@ -171,7 +180,6 @@ public class EnemyController_Yamashina : MonoBehaviour
                 cvFadeIn.gameObject.SetActive(true);
             }
         }
-
     }
 }
 
