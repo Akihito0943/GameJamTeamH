@@ -11,6 +11,13 @@ public class Bullet_Kumagae : MonoBehaviour
     [Header("弾の寿命")]
     [SerializeField] float lifeTime = 5f;        // 弾の寿命
 
+    [SerializeField, Header("アイテム取得時のエフェクト")]
+    GameObject goFlashEffect;
+
+    [SerializeField, Header("効果音用のオーディオソース")] AudioSource audioSourceSE;
+    [SerializeField, Header("アイテムに当たった時の効果音")] AudioClip acItem;
+
+
     private Player_auto_run_oya player_Auto_Run_Oya;
     void Start()
     {    
@@ -28,7 +35,15 @@ public class Bullet_Kumagae : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Item"))
         {
-            player_Auto_Run_Oya.ChangeSpeed(player_Auto_Run_Oya.GetAccelPower());   
+            player_Auto_Run_Oya.ChangeSpeed(player_Auto_Run_Oya.GetAccelPower());
+
+            // アイテムに当たった時の効果音再生            
+            audioSourceSE.PlayOneShot(acItem);
+
+            // 取得時のエフェクトを出す
+            var g = Instantiate(goFlashEffect, collision.gameObject.transform.position, Quaternion.identity);
+            Destroy(g, 1.0f);
+            Destroy(collision.gameObject);
         }
     }
 

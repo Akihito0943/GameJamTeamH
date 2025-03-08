@@ -23,7 +23,6 @@ public class Player_Aim : MonoBehaviour
     [SerializeField, Header("効果音用のオーディオソース")] AudioSource audioSourceSE;
     [SerializeField, Header("投げた時の効果音")] AudioClip acThrow;
 
-
     float rotZ;
     
     // Update is called once per frame
