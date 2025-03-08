@@ -292,11 +292,13 @@ MonoBehaviour:
   accelPower: 1.5
   brakePower: 0.5
   accelDuration: 2
+  minSpeed: 0
   audioSourceRun: {fileID: 2720020973958677898}
   audioSourceSE: {fileID: 6107596661450771957}
   acObstacle: {fileID: 8300000, guid: 32740bfb3a014494f9f1eb93864386ca, type: 3}
   acItem: {fileID: 8300000, guid: 66cc048f270c6ca4ea1e7b7f01bf5ae9, type: 3}
   goFlashEffect: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}
+  goEnemy: {fileID: 0}
 --- !u!114 &770908969311465132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9fc51285e118b49a924197894ebad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGround: 1
   jumpPower: 10
   animator: {fileID: 4780148098357540639}
   acJump: {fileID: 8300000, guid: b9e1ef555687f7a4b97a1479f489d2b7, type: 3}
