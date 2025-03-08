@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_jump : MonoBehaviour
 {
     Rigidbody2D rigidbody2D;
-    private bool isGround = true;
+    [SerializeField] private bool isGround = true;
     [Header("ƒWƒƒƒ“ƒv—Í")]
     [SerializeField] float jumpPower = 5.0f;
 
@@ -41,8 +41,8 @@ public class Player_jump : MonoBehaviour
             goSmoke.SetActive(false);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
