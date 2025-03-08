@@ -10,6 +10,8 @@ public class Player_auto_run_oya : MonoBehaviour
     [SerializeField, Header("減速力")] float brakePower = 0.5f;        // 減速力
     [SerializeField, Header("加速継続時間")] float accelDuration = 0.5f; // 加速継続時間
 
+    [SerializeField] float minSpeed;
+
 
     [SerializeField, Header("走る用のオーディオソース")] AudioSource audioSourceRun;
 
@@ -38,7 +40,7 @@ public class Player_auto_run_oya : MonoBehaviour
 void Start()
     {
         originalSpeed = speed;
-
+        minSpeed = speed * brakePower;
         // コンポーネント取得
         smoke = GetComponent<SmokeVFX_Kumagae>();
         originalSmokeScale = new Vector3(0.6f,0.6f,0.6f);
@@ -102,10 +104,18 @@ void Start()
     private IEnumerator Accelerate(float accelMultiplier)
     {
         // 加速度分スピードを調整する
-        if (speed == originalSpeed)
+        if (accelMultiplier == accelPower)
         {
-            speed *= accelMultiplier;
+            if (speed == originalSpeed)
+            {
+                speed *= accelMultiplier;
+            }
         }
+        else
+        {
+            speed = minSpeed;
+        }
+
         // 一定時間待つ
         yield return new WaitForSeconds(accelDuration);
         // 元の移動速度に戻す
