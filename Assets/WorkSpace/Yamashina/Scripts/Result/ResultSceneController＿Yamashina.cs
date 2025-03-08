@@ -41,8 +41,9 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         switch (GameManager_Yamashina.GetState())
         {
             case GameManager_Yamashina.EnemyState.Defeated:
-                resultImage_Win.sprite = VictoriousSprite;  
                 resultImage.gameObject.SetActive(false);
+
+                resultImage_Win.sprite = VictoriousSprite;  
                 resultTextImage.sprite = VictoriousTextSprite;
 
                 break;
