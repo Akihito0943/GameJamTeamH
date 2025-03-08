@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_jump : MonoBehaviour
 {
     Rigidbody2D rigidbody2D;
-    [SerializeField] private bool isGround = true;
+    [SerializeField] public bool isGround = true;
     [Header("ジャンプ力")]
     [SerializeField] float jumpPower = 5.0f;
 
@@ -44,34 +44,34 @@ public class Player_jump : MonoBehaviour
         }
     }
     
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGround = true;
-            animator.SetBool("isInair", true);
-            audioSourceRun.Play();
-        }
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        isGround = true;
+    //        animator.SetBool("isInair", true);
+    //        audioSourceRun.Play();
+    //    }
 
-    }
+    //}
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            // 土煙エフェクトを出す
-            goSmoke.SetActive(true);
-        }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        // 土煙エフェクトを出す
+    //        goSmoke.SetActive(true);
+    //    }
 
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGround = false;
-            animator.SetBool("isInair", false);
-            audioSourceRun.Stop();
-        }
-    }
+    //}
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        isGround = false;
+    //        animator.SetBool("isInair", false);
+    //        audioSourceRun.Stop();
+    //    }
+    //}
 
 }
