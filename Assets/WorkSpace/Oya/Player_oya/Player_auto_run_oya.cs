@@ -6,7 +6,7 @@ public class Player_auto_run_oya : MonoBehaviour
 {
     [SerializeField, Header("移動速度")] float speed = 1.0f;
 
-    [SerializeField, Header("加速力")] public static float accelPower = 5;           // 加速力
+    [SerializeField, Header("加速力")] public  float accelPower = 5;           // 加速力
     [SerializeField, Header("減速力")] float brakePower = 0.5f;        // 減速力
     [SerializeField, Header("加速継続時間")] float accelDuration = 0.5f; // 加速継続時間
 
@@ -29,7 +29,7 @@ public class Player_auto_run_oya : MonoBehaviour
 
     // 元の土煙エフェクトのスケール
     private Vector3 originalSmokeScale;
-    public static float GetAccelPower()
+    public  float GetAccelPower()
     {
         return  accelPower;
     }

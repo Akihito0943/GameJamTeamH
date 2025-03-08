@@ -28,7 +28,7 @@ public class Bullet_Kumagae : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Item"))
         {
-            player_Auto_Run_Oya.ChangeSpeed(Player_auto_run_oya.GetAccelPower());   
+            player_Auto_Run_Oya.ChangeSpeed(player_Auto_Run_Oya.GetAccelPower());   
         }
     }
 
