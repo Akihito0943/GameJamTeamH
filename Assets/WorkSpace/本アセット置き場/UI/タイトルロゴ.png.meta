@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3538b8069363be446b9b5580b74c4aa7
+guid: 632bd01f592fa5746948d4eec019850f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 467227513649775858
-    second: UI_Option_BGM_0
+      213: 5468127357030766906
+    second: "\u30BF\u30A4\u30C8\u30EB\u30ED\u30B4_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Option_BGM_0
+      name: "\u30BF\u30A4\u30C8\u30EB\u30ED\u30B4_0"
       rect:
         serializedVersion: 2
-        x: 71
-        y: 4
-        width: 243
-        height: 119
+        x: 201
+        y: 1
+        width: 1112
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f4426cb2fceb7600800000000000000
-      internalID: 467227513649775858
+      spriteID: a391a6e1cd0b2eb40800000000000000
+      internalID: 5468127357030766906
       vertices: []
       indices: 
       edges: []
@@ -157,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_Option_BGM_0: 467227513649775858
+      "\u30BF\u30A4\u30C8\u30EB\u30ED\u30B4_0": 5468127357030766906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
