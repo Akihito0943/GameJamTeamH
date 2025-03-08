@@ -17161,6 +17161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutSceneObject
       objectReference: {fileID: 0}
+    - target: {fileID: 1864381672284446565, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900367342457587881, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17201,10 +17205,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6174663412375423692, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6488949113465203436, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
       propertyPath: trPlayer
       value: 
       objectReference: {fileID: 1360908444}
+    - target: {fileID: 6762433966155508084, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6467a3b6d26ace348a16503cd321050e, type: 3}
     - target: {fileID: 6932450949673352968, guid: 2c60d71812f338a4fad4a664d8cae59c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6
