@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI_Game_WukongEscape_0: -7372993518558231957
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
