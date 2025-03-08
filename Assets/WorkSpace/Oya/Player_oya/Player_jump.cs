@@ -49,6 +49,14 @@ public class Player_jump : MonoBehaviour
             isGround = true;
             animator.SetBool("isInair", true);
             audioSourceRun.Play();
+        }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
             // 土煙エフェクトを出す
             goSmoke.SetActive(true);
         }
