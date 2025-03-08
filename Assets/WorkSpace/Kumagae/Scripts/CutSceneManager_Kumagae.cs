@@ -59,7 +59,7 @@ public class CutSceneManager_Kumagae : MonoBehaviour
     /// </summary>
     public void StartCutSceneOfEnd()
     {
-        isCutSceneEnd = false;
+        // isCutSceneEnd = false;
         animator.enabled = true;
         animator.Play(acGameOver.name);
     }

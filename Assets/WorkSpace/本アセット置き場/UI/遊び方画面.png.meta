@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6c173e5cfa7f7ea4ba91e1cf0058488d
+guid: 2df9d0d21a56ad64b8f570f8240700c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5720806106795589804
-    second: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0"
+      213: 6230942102643815506
+    second: "\u904A\u3073\u65B9\u753B\u9762_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,37 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0"
+      name: "\u904A\u3073\u65B9\u753B\u9762_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -140,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45f309fe72d9b90b0800000000000000
-      internalID: -5720806106795589804
+      spriteID: 2543c1454d0c87650800000000000000
+      internalID: 6230942102643815506
       vertices: []
       indices: 
       edges: []
@@ -156,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u4ED5\u69D8\u66F8_0": -5720806106795589804
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
