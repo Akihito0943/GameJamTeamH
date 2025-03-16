@@ -29,6 +29,7 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
 
     private void InitializeReferences()
     {
+        resultTextImage.gameObject.SetActive(false);    
         int totalSeconds = Mathf.FloorToInt(Time.time); // 経過秒数を整数化
         int minutes = totalSeconds / 60;  // 分を計算
         int seconds = totalSeconds % 60;  // 余った秒を計算
@@ -41,6 +42,8 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
         switch (GameManager_Yamashina.GetState())
         {
             case GameManager_Yamashina.EnemyState.Defeated:
+                resultTextImage.gameObject.SetActive(true);
+
                 resultImage.gameObject.SetActive(false);
 
                 resultImage_Win.sprite = VictoriousSprite;  
@@ -48,6 +51,8 @@ public class ResultSceneController＿Yamashina : MonoBehaviour
 
                 break;
             case GameManager_Yamashina.EnemyState.Escaped:
+                resultTextImage.gameObject.SetActive(true);
+
                 resultImage_Win.gameObject.SetActive(false);
 
                 resultImage.sprite = defeatedSprite;
